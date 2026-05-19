@@ -1,0 +1,54 @@
+import './globals.css';
+
+import type { Metadata } from 'next';
+
+import { ThemeProvider } from '@/components/theme-provider';
+import { Navbar } from '@/components/layout/navbar';
+import { Footer } from '@/components/layout/footer';
+
+export const metadata: Metadata = {
+	title: 'Engineering Portfolio',
+	description: 'A professional portfolio website for engineering students.',
+
+	icons: {
+		icon: '/icon.png',
+		shortcut: '/icon.png',
+		apple: '/icon.png',
+	},
+};
+
+export default function RootLayout({
+	children,
+}: {
+	children: React.ReactNode;
+}) {
+	return (
+		<html lang="en" suppressHydrationWarning>
+
+			<body className="font-sans">
+
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="dark"
+					enableSystem={false}
+				>
+
+					<div className="relative min-h-screen flex flex-col">
+
+						<Navbar />
+
+						<main className="flex-grow pt-16">
+							{children}
+						</main>
+
+						<Footer />
+
+					</div>
+
+				</ThemeProvider>
+
+			</body>
+
+		</html>
+	);
+}
