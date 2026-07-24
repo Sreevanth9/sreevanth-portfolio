@@ -69,7 +69,7 @@ export function HeroSection() {
 				setVantaEffect(
 					NET({
 						el: vantaRef.current,
-						THREE: THREE,
+						THREE: Object.assign({}, THREE, { VertexColors: true }),
 						mouseControls: true,
 						touchControls: true,
 						gyroControls: false,

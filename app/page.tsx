@@ -13,10 +13,9 @@ export default function Home() {
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
-		// Simulate loading time
 		const timer = setTimeout(() => {
 			setIsLoading(false);
-		}, 2000);
+		}, 500);
 
 		return () => clearTimeout(timer);
 	}, []);
@@ -26,16 +25,16 @@ export default function Home() {
 			<AnimatePresence>
 				{isLoading && (
 					<motion.div
-						className="fixed inset-0 z-50 flex items-center justify-center bg-background"
+						className="fixed inset-0 z-50 flex items-center justify-center bg-background pointer-events-none"
 						initial={{ opacity: 1 }}
 						exit={{ opacity: 0 }}
-						transition={{ duration: 0.5 }}
+						transition={{ duration: 0.4 }}
 					>
 						<motion.div
 							className="flex flex-col items-center"
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.5 }}
+							transition={{ duration: 0.3 }}
 						>
 							<motion.div
 								className="w-16 h-16 border-t-4 border-primary border-solid rounded-full"
@@ -47,7 +46,7 @@ export default function Home() {
 								}}
 							/>
 							<motion.p
-								className="mt-4 text-lg"
+								className="mt-4 text-lg font-medium"
 								animate={{
 									opacity: [0.5, 1, 0.5],
 								}}
@@ -63,15 +62,11 @@ export default function Home() {
 				)}
 			</AnimatePresence>
 
-			{!isLoading && (
-				<>
-					<HeroSection />
-					<AboutPreview />
-					<ProjectsPreview />
-					<SkillsPreview />
-					<ContactPreview />
-				</>
-			)}
+			<HeroSection />
+			<AboutPreview />
+			<ProjectsPreview />
+			<SkillsPreview />
+			<ContactPreview />
 		</>
 	);
 }
