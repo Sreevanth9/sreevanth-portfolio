@@ -172,9 +172,26 @@ export type Project = {
 	link?: string;
 	linkText?: string;
 	repo?: string;
+	reportUrl?: string;
+	reportText?: string;
+	certificateUrl?: string;
+	certificateText?: string;
 };
 
-export const projects: Project[] = [
+export type Publication = {
+	title: string;
+	conference: string;
+	location?: string;
+	year: string;
+	authors?: string;
+	description: string;
+	tags: string[];
+	paperUrl?: string;
+	certificateUrl?: string;
+	projectUrl?: string;
+};
+
+export const selectedProjects: Project[] = [
 	{
 		title: 'IntelliFarm AI – Smart Cloud Agriculture Platform',
 		description:
@@ -194,6 +211,8 @@ export const projects: Project[] = [
 		link: 'https://dentiginee.lovable.app',
 		linkText: 'Visit Project',
 		repo: 'https://github.com/Sreevanth9/dentiginee',
+		certificateUrl: '/documents/icirset-2025-certificate.jpeg',
+		certificateText: 'View Certificate',
 	},
 	{
 		title: 'SketchForce AI – Forensic Suspect Identification System',
@@ -204,20 +223,16 @@ export const projects: Project[] = [
 		repo: 'https://github.com/Sreevanth9/Sketch-Force-AI',
 	},
 	{
-		title: 'CanSat Ground Control Software',
+		title: 'Real-Time Web Chat Application with Live Performance Metrics',
 		description:
-			'ISRO-inspired real-time ground station interface featuring telemetry parsing, 3D attitude visualization with Three.js, mission maps via Leaflet, and live sensor charting.',
-		image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop',
-		tags: ['React.js', 'Three.js', 'Leaflet.js', 'Chart.js', 'Telemetry', 'JavaScript'],
-		repo: 'https://github.com/Sreevanth9/cansat-gcs',
-	},
-	{
-		title: 'Real-Time Web Chat Application',
-		description:
-			'Low-latency chat system built with Node.js, Express, and Socket.IO featuring live performance metrics, room management, typing indicators, and message persistence. Published at ICCCNT 2025.',
+			'Low-latency full-duplex chat platform built with Node.js, Express, and Socket.IO featuring real-time room communication, typing indicators, message persistence, and live P95 latency monitoring dashboards.',
 		image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop',
-		tags: ['Socket.io', 'Node.js', 'Express.js', 'WebSocket', 'Realtime'],
+		tags: ['Socket.io', 'Node.js', 'Express.js', 'WebSocket', 'Latency Metrics', 'Distributed Systems'],
 		repo: 'https://github.com/Sreevanth9/chat-websocket',
+		reportUrl: '/documents/real-time-chat-paper.pdf',
+		reportText: 'View Paper',
+		certificateUrl: '/documents/icccnt-2025-certificate.pdf',
+		certificateText: 'View Certificate',
 	},
 	{
 		title: 'EV Route Optimizer',
@@ -236,17 +251,27 @@ export const projects: Project[] = [
 		repo: 'https://github.com/Sreevanth9/student-management-api',
 	},
 	{
+		title: 'CanSat Ground Control Software',
+		description:
+			'ISRO-inspired real-time ground station interface featuring telemetry parsing, 3D attitude visualization with Three.js, mission maps via Leaflet, and live sensor charting.',
+		image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop',
+		tags: ['React.js', 'Three.js', 'Leaflet.js', 'Chart.js', 'Telemetry', 'JavaScript'],
+		repo: 'https://github.com/Sreevanth9/cansat-gcs',
+	},
+	{
 		title: 'SecureVoIP Cryptographic Communication',
 		description:
-			'Encrypted VoIP communication system in MATLAB featuring AES voice payload encryption, RSA digital signatures, and TCP socket stream transmission.',
+			'Encrypted VoIP communication system in MATLAB featuring AES voice payload encryption, RSA digital signatures, and TCP socket stream transmission with hidden message encoding over SIP.',
 		image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop',
 		tags: ['MATLAB', 'AES Encryption', 'RSA', 'TCP Sockets', 'Cryptography'],
 		repo: 'https://github.com/Sreevanth9/SecureVoIP-MATLAB',
+		reportUrl: '/documents/secure-audio-sip-report.pdf',
+		reportText: 'View Report',
 	},
 	{
 		title: 'Flutter MVVM Public API App',
 		description:
-			'Cross-platform mobile application architected with MVVM pattern, clean state management, responsive ListView pagination, and error handling for REST APIs.',
+			'Cross-platform mobile application architected with MVVM pattern, clean state management, responsive ListView pagination, and robust error handling for REST APIs.',
 		image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200&auto=format&fit=crop',
 		tags: ['Flutter', 'Dart', 'MVVM', 'Mobile Development', 'REST API'],
 		repo: 'https://github.com/Sreevanth9/flutter_mvvm_app',
@@ -259,38 +284,96 @@ export const projects: Project[] = [
 		tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'HTML5', 'CSS3'],
 		repo: 'https://github.com/Sreevanth9/fullstack-web-development-practice',
 	},
+];
+
+export const researchProjects: Project[] = [
 	{
-		title: 'Data Analysis & Analytics Case Studies',
+		title: 'Deep Learning-Based Brain Tumor Analysis',
 		description:
-			'Exploratory data analysis case studies applying Pandas, NumPy, statistical modeling, and Power BI visualization across real-world datasets.',
+			'A multi-task deep learning system combining tumor segmentation and multi-class classification from MRI scans using an enhanced U-Net architecture.',
+		image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=1200&auto=format&fit=crop',
+		tags: ['Deep Learning', 'U-Net', 'Image Segmentation', 'Computer Vision', 'MRI Analysis', 'Python'],
+		reportUrl: '/documents/brain-tumor-analysis-report.pdf',
+		reportText: 'View Report',
+	},
+	{
+		title: 'PySpark-Driven Graph-Based E-commerce Recommendation and Purchase Prediction System',
+		description:
+			'A graph-based recommendation and purchase prediction system using PySpark, Node2Vec, FAISS, machine learning, and deep learning for large-scale e-commerce interaction data.',
 		image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
-		tags: ['Python', 'Pandas', 'NumPy', 'Data Analysis', 'Jupyter'],
-		repo: 'https://github.com/Sreevanth9/data-analysis-case-studies',
+		tags: ['PySpark', 'FAISS', 'Node2Vec', 'Machine Learning', 'Deep Learning', 'XGBoost', 'ANN'],
+		reportUrl: '/documents/pyspark-ecommerce-recommendation-report.pdf',
+		reportText: 'View Report',
 	},
 	{
-		title: 'Machine Learning Foundations & Implementations',
+		title: 'Efficient Pathfinding Algorithms for Autonomous Vehicles Using Graph Algorithms',
 		description:
-			'Machine learning notebooks covering supervised and unsupervised learning algorithms, model evaluation, and classification pipelines.',
-		image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1200&auto=format&fit=crop',
-		tags: ['Python', 'Machine Learning', 'Scikit-Learn', 'Jupyter'],
-		repo: 'https://github.com/Sreevanth9/ML',
+			'An autonomous-vehicle path planning system combining A* for global path planning, D*-Lite for dynamic replanning, and network-flow algorithms for traffic-aware route decisions.',
+		image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1200&auto=format&fit=crop',
+		tags: ['A*', 'D*-Lite', 'Graph Algorithms', 'Network Flow', 'Path Planning', 'Optimization'],
+		reportUrl: '/documents/autonomous-vehicles-pathfinding-report.pdf',
+		reportText: 'View Report',
 	},
 	{
-		title: 'Pokemon Finder Async Web App',
+		title: 'Smart Irrigation System for Protected Flower Cultivation Using Real-Time Sensing and Automation',
 		description:
-			'Asynchronous web application consuming PokéAPI with dynamic card rendering, multi-stat filtering, and responsive CSS UI.',
-		image: 'https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?q=80&w=1200&auto=format&fit=crop',
-		tags: ['JavaScript', 'REST API', 'Async/Await', 'CSS3'],
-		repo: 'https://github.com/Sreevanth9/Pokemon_finder',
+			'An IoT-based smart irrigation system using real-time environmental sensing and ESP32-based automation for protected flower cultivation.',
+		image: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=1200&auto=format&fit=crop',
+		tags: ['ESP32', 'IoT', 'Blynk', 'Soil Moisture Sensors', 'Temperature/Humidity Sensors', 'Automation'],
+		reportUrl: '/documents/smart-irrigation-system-report.pdf',
+		reportText: 'View Report',
 	},
 	{
-		title: 'Java SE Fundamentals & OOP Architecture',
+		title: 'Blockchain-Based Transaction Validation and Management System',
 		description:
-			'Hands-on implementations of core Java SE architecture, OOP principles, collection framework algorithms, concurrency, and competitive programming problems.',
-		image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop',
-		tags: ['Java', 'OOP', 'Data Structures', 'Algorithms'],
-		repo: 'https://github.com/Sreevanth9/java-se-learning-journey',
+			'Decentralized transaction verification and ledger management framework featuring cryptographic block validation, immutable audit trails, and peer-to-peer consensus mechanisms.',
+		image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1200&auto=format&fit=crop',
+		tags: ['Blockchain', 'Cryptography', 'Distributed Systems', 'Consensus', 'Security'],
+		reportUrl: '/documents/blockchain-transaction-validation-report.pdf',
+		reportText: 'View Report',
 	},
+	{
+		title: 'Underwater Debris Detection with YOLO & CBAM Modifications',
+		description:
+			'Marine robotics perception pipeline evaluating YOLO architectures modified with Convolutional Block Attention Modules (CBAM) for high-accuracy submerged debris classification.',
+		image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1200&auto=format&fit=crop',
+		tags: ['YOLO', 'CBAM', 'Computer Vision', 'PyTorch', 'Object Detection', 'Marine AI'],
+		reportUrl: '/documents/underwater-debris-detection-report.pdf',
+		reportText: 'View Report',
+	},
+];
+
+export const publications: Publication[] = [
+	{
+		title: 'Teledentistry Enhancement Through AI-Based Image Classification and Patient Scheduling Framework',
+		conference: 'International Conference on Interdisciplinary Research in Science, Engineering, and Technology (ICIRSET 2025)',
+		location: 'Shah & Anchor Kutchhi Engineering College, Mumbai (Scopus-Indexed)',
+		year: '2025',
+		authors: 'Vadlamudi Sreevanth Chowdhary',
+		description:
+			'A research work exploring AI-based image classification and patient scheduling within a teledentistry framework.',
+		tags: ['Teledentistry', 'AI Image Classification', 'Patient Scheduling', 'Healthcare AI', 'REST APIs'],
+		certificateUrl: '/documents/icirset-2025-certificate.jpeg',
+		projectUrl: 'https://dentiginee.lovable.app',
+	},
+	{
+		title: 'Real-Time Web Chat Application with Live Performance Metrics',
+		conference: 'Sixteenth International Conference on Computing, Communication and Networking Technologies (ICCCNT 2025)',
+		location: 'IIT Indore (in association with IEEE EPS & AICTE)',
+		year: '2025',
+		authors: 'Yendamuri Nishanth, Tammalla Nikhil, Vadlamudi Sreevanth Chowdhary',
+		description:
+			'Presented at the Sixteenth International Conference on Computing, Communication and Networking Technologies (ICCCNT 2025) held at IIT Indore. Focuses on real-time web communication, WebSockets/Socket.IO, latency measurement, P95 latency, and live metrics dashboards.',
+		tags: ['Real-Time Web Communication', 'WebSockets', 'Socket.IO', 'Latency Measurement', 'P95 Latency', 'Live Metrics Dashboard'],
+		paperUrl: '/documents/real-time-chat-paper.pdf',
+		certificateUrl: '/documents/icccnt-2025-certificate.pdf',
+		projectUrl: undefined,
+	},
+];
+
+export const projects: Project[] = [
+	...selectedProjects,
+	...researchProjects,
 ];
 
 export type Education = {

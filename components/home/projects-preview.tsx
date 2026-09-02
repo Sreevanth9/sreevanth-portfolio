@@ -8,6 +8,8 @@ import { motion } from 'framer-motion';
 import {
 	ArrowRight,
 	ExternalLink,
+	Github,
+	FileText,
 } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
@@ -164,41 +166,86 @@ export function ProjectsPreview() {
 
 									{/* BUTTONS */}
 
-									{project.link && (
+									<div className="flex flex-wrap items-center gap-2.5">
 
-										<div className="flex items-center gap-3">
-
+										{project.link && (
 											<Button
 												size="sm"
 												asChild
 												className="
 													rounded-xl
-													h-11
-													px-5
+													h-10
+													px-4
 													bg-primary
 													text-primary-foreground
 													hover:opacity-90
 													shadow-md shadow-primary/20
 												"
 											>
-
 												<a
 													href={project.link}
 													target="_blank"
 													rel="noopener noreferrer"
 												>
-
-													<ExternalLink className="h-4 w-4 mr-2" />
-
+													<ExternalLink className="h-4 w-4 mr-1.5" />
 													{project.linkText || 'Visit Project'}
-
 												</a>
-
 											</Button>
+										)}
 
-										</div>
+										{project.repo && (
+											<Button
+												size="sm"
+												variant="outline"
+												asChild
+												className="
+													rounded-xl
+													h-10
+													px-4
+													border-white/10
+													bg-white/[0.03]
+													hover:bg-white/[0.08]
+													text-white
+												"
+											>
+												<a
+													href={project.repo}
+													target="_blank"
+													rel="noopener noreferrer"
+												>
+													<Github className="h-4 w-4 mr-1.5" />
+													GitHub
+												</a>
+											</Button>
+										)}
 
-									)}
+										{project.reportUrl && (
+											<Button
+												size="sm"
+												variant="outline"
+												asChild
+												className="
+													rounded-xl
+													h-10
+													px-4
+													border-white/10
+													bg-white/[0.03]
+													hover:bg-white/[0.08]
+													text-white
+												"
+											>
+												<a
+													href={project.reportUrl}
+													target="_blank"
+													rel="noopener noreferrer"
+												>
+													<FileText className="h-4 w-4 mr-1.5 text-primary" />
+													{project.reportText || 'View Report'}
+												</a>
+											</Button>
+										)}
+
+									</div>
 
 								</div>
 
