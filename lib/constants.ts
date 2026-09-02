@@ -219,6 +219,8 @@ export const selectedProjects: Project[] = [
 		image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop',
 		tags: ['Java', 'JavaFX', 'OpenCV', 'AWS Rekognition', 'AWS S3', 'SQLite'],
 		repo: 'https://github.com/Sreevanth9/Sketch-Force-AI',
+		reportUrl: '/documents/sketchforce-ai-report.pdf',
+		reportText: 'View Report',
 	},
 	{
 		title: 'Deep Learning-Based Brain Tumor Analysis',
@@ -348,6 +350,7 @@ export const publications: Publication[] = [
 		description:
 			'A research work exploring AI-based image classification and patient scheduling within a teledentistry framework.',
 		tags: ['Teledentistry', 'AI Image Classification', 'Patient Scheduling', 'Healthcare AI', 'REST APIs'],
+		paperUrl: '/documents/teledentistry-ai-paper.pdf',
 		certificateUrl: '/documents/icirset-2025-certificate.jpeg',
 		projectUrl: 'https://dentiginee.lovable.app',
 	},
