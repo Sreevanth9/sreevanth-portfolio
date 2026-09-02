@@ -10,7 +10,6 @@ import {
 	BookOpen,
 	MapPin,
 	Calendar,
-	Sparkles,
 } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
@@ -18,7 +17,6 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import {
 	selectedProjects,
-	researchProjects,
 	publications,
 	type Project,
 } from '@/lib/constants';
@@ -75,29 +73,10 @@ export default function ProjectsPage() {
 						href={project.reportUrl}
 						target="_blank"
 						rel="noopener noreferrer"
-						aria-label={`View project report for ${project.title}`}
+						aria-label={`View project document for ${project.title}`}
 					>
 						<FileText className="h-4 w-4 mr-1.5 shrink-0 text-primary" />
 						{project.reportText || 'View Report'}
-					</a>
-				</Button>
-			)}
-
-			{project.certificateUrl && (
-				<Button
-					size="sm"
-					variant="outline"
-					asChild
-					className="border-white/10 bg-white/[0.03] hover:bg-white/[0.08] text-white hover:text-white"
-				>
-					<a
-						href={project.certificateUrl}
-						target="_blank"
-						rel="noopener noreferrer"
-						aria-label={`View certificate for ${project.title}`}
-					>
-						<Award className="h-4 w-4 mr-1.5 shrink-0 text-amber-400" />
-						{project.certificateText || 'View Certificate'}
 					</a>
 				</Button>
 			)}
@@ -124,27 +103,27 @@ export default function ProjectsPage() {
 							Portfolio Showcase
 						</Badge>
 						<h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
-							Projects & Research
+							Research & Projects
 						</h1>
 						<p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-							A curated collection of full-stack software applications, backend architectures,
-							academic research systems, and peer-reviewed conference publications.
+							A showcase of software platforms, deep learning frameworks, algorithmic systems,
+							and peer-reviewed conference publications.
 						</p>
 					</motion.div>
 
 					{/* ====================================================== */}
-					{/* SECTION 1: SELECTED PROJECTS                           */}
+					{/* SECTION 1: RESEARCH & ACADEMIC PROJECTS               */}
 					{/* ====================================================== */}
 					<section className="mb-24">
 						<div className="mb-10">
 							<div className="flex items-center gap-3 mb-2">
-								<div className="h-2 w-2 rounded-full bg-primary" />
+								<div className="h-2.5 w-2.5 rounded-full bg-primary" />
 								<h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-									Selected Projects
+									Research & Academic Projects
 								</h2>
 							</div>
 							<p className="text-muted-foreground text-sm sm:text-base">
-								Full-stack software applications, cloud systems, and core software engineering platforms.
+								Software engineering platforms, deep learning architectures, graph algorithms, and IoT automation systems.
 							</p>
 						</div>
 
@@ -152,7 +131,7 @@ export default function ProjectsPage() {
 							{selectedProjects.map((project, index) => (
 								<motion.div
 									key={project.title}
-									variants={fadeInScale(index * 0.08)}
+									variants={fadeInScale(index * 0.05)}
 									className="flex"
 								>
 									<Card className="flex flex-col h-full w-full card-gradient border border-white/10 hover:border-primary/40 transition-all duration-300">
@@ -199,78 +178,12 @@ export default function ProjectsPage() {
 					</section>
 
 					{/* ====================================================== */}
-					{/* SECTION 2: RESEARCH & ACADEMIC PROJECTS               */}
-					{/* ====================================================== */}
-					<section className="mb-24">
-						<div className="mb-10">
-							<div className="flex items-center gap-3 mb-2">
-								<div className="h-2 w-2 rounded-full bg-violet-400" />
-								<h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-									Research & Academic Projects
-								</h2>
-							</div>
-							<p className="text-muted-foreground text-sm sm:text-base">
-								Deep learning frameworks, graph optimization algorithms, and IoT automation systems developed through academic research.
-							</p>
-						</div>
-
-						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-							{researchProjects.map((project, index) => (
-								<motion.div
-									key={project.title}
-									variants={fadeInScale(index * 0.08)}
-									className="flex"
-								>
-									<Card className="flex flex-col h-full w-full card-gradient border border-white/10 hover:border-violet-500/40 transition-all duration-300">
-										<div className="relative h-48 w-full overflow-hidden rounded-t-lg">
-											<Image
-												src={project.image}
-												alt={project.title}
-												fill
-												className="object-cover transition-transform duration-500 hover:scale-105"
-												sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-											/>
-										</div>
-
-										<CardContent className="flex-grow p-6 flex flex-col justify-between">
-											<div>
-												<h3 className="font-bold text-xl mb-2.5 text-white leading-snug">
-													{project.title}
-												</h3>
-												<p className="text-muted-foreground text-sm leading-relaxed mb-5">
-													{project.description}
-												</p>
-											</div>
-
-											<div className="flex flex-wrap gap-1.5 mt-auto">
-												{project.tags.map((tag) => (
-													<Badge
-														key={tag}
-														variant="secondary"
-														className="text-xs bg-white/5 border border-white/10 text-zinc-300 font-normal"
-													>
-														{tag}
-													</Badge>
-												))}
-											</div>
-										</CardContent>
-
-										<CardFooter className="p-6 pt-0 border-t border-white/5">
-											{renderProjectButtons(project)}
-										</CardFooter>
-									</Card>
-								</motion.div>
-							))}
-						</div>
-					</section>
-
-					{/* ====================================================== */}
-					{/* SECTION 3: PUBLICATIONS                               */}
+					{/* SECTION 2: PUBLICATIONS                               */}
 					{/* ====================================================== */}
 					<section className="mb-12">
 						<div className="mb-10">
 							<div className="flex items-center gap-3 mb-2">
-								<div className="h-2 w-2 rounded-full bg-amber-400" />
+								<div className="h-2.5 w-2.5 rounded-full bg-amber-400" />
 								<h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
 									Publications
 								</h2>
@@ -322,8 +235,8 @@ export default function ProjectsPage() {
 										{/* AUTHORS */}
 										{pub.authors && (
 											<p className="text-xs sm:text-sm text-zinc-400 mb-4 pb-4 border-b border-white/5">
-												<span className="text-primary font-medium">Authors: </span>
-												<span className="text-zinc-200">{pub.authors}</span>
+												<span className="text-primary font-medium">Author: </span>
+												<span className="text-zinc-200 font-semibold">{pub.authors}</span>
 											</p>
 										)}
 

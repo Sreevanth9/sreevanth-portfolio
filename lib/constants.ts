@@ -211,8 +211,6 @@ export const selectedProjects: Project[] = [
 		link: 'https://dentiginee.lovable.app',
 		linkText: 'Visit Project',
 		repo: 'https://github.com/Sreevanth9/dentiginee',
-		certificateUrl: '/documents/icirset-2025-certificate.jpeg',
-		certificateText: 'View Certificate',
 	},
 	{
 		title: 'SketchForce AI – Forensic Suspect Identification System',
@@ -222,71 +220,6 @@ export const selectedProjects: Project[] = [
 		tags: ['Java', 'JavaFX', 'OpenCV', 'AWS Rekognition', 'AWS S3', 'SQLite'],
 		repo: 'https://github.com/Sreevanth9/Sketch-Force-AI',
 	},
-	{
-		title: 'Real-Time Web Chat Application with Live Performance Metrics',
-		description:
-			'Low-latency full-duplex chat platform built with Node.js, Express, and Socket.IO featuring real-time room communication, typing indicators, message persistence, and live P95 latency monitoring dashboards.',
-		image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop',
-		tags: ['Socket.io', 'Node.js', 'Express.js', 'WebSocket', 'Latency Metrics', 'Distributed Systems'],
-		repo: 'https://github.com/Sreevanth9/chat-websocket',
-		reportUrl: '/documents/real-time-chat-paper.pdf',
-		reportText: 'View Paper',
-		certificateUrl: '/documents/icccnt-2025-certificate.pdf',
-		certificateText: 'View Certificate',
-	},
-	{
-		title: 'EV Route Optimizer',
-		description:
-			'Smart navigation and shortest-path planning platform for electric vehicles incorporating graph algorithms (Floyd-Warshall, Bellman-Ford), traffic constraints, and charging station graphs.',
-		image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=1200&auto=format&fit=crop',
-		tags: ['JavaScript', 'Graph Algorithms', 'Leaflet.js', 'Optimization'],
-		repo: 'https://github.com/Sreevanth9/EVRouteOptimizer',
-	},
-	{
-		title: 'Student Management REST API',
-		description:
-			'Production-ready TypeScript backend API featuring modular Express routing, JWT authentication, schema validation, and structured database operations.',
-		image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop',
-		tags: ['TypeScript', 'Node.js', 'Express.js', 'REST APIs', 'JWT'],
-		repo: 'https://github.com/Sreevanth9/student-management-api',
-	},
-	{
-		title: 'CanSat Ground Control Software',
-		description:
-			'ISRO-inspired real-time ground station interface featuring telemetry parsing, 3D attitude visualization with Three.js, mission maps via Leaflet, and live sensor charting.',
-		image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop',
-		tags: ['React.js', 'Three.js', 'Leaflet.js', 'Chart.js', 'Telemetry', 'JavaScript'],
-		repo: 'https://github.com/Sreevanth9/cansat-gcs',
-	},
-	{
-		title: 'SecureVoIP Cryptographic Communication',
-		description:
-			'Encrypted VoIP communication system in MATLAB featuring AES voice payload encryption, RSA digital signatures, and TCP socket stream transmission with hidden message encoding over SIP.',
-		image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop',
-		tags: ['MATLAB', 'AES Encryption', 'RSA', 'TCP Sockets', 'Cryptography'],
-		repo: 'https://github.com/Sreevanth9/SecureVoIP-MATLAB',
-		reportUrl: '/documents/secure-audio-sip-report.pdf',
-		reportText: 'View Report',
-	},
-	{
-		title: 'Flutter MVVM Public API App',
-		description:
-			'Cross-platform mobile application architected with MVVM pattern, clean state management, responsive ListView pagination, and robust error handling for REST APIs.',
-		image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200&auto=format&fit=crop',
-		tags: ['Flutter', 'Dart', 'MVVM', 'Mobile Development', 'REST API'],
-		repo: 'https://github.com/Sreevanth9/flutter_mvvm_app',
-	},
-	{
-		title: 'Full-Stack Web Development Practice Suite',
-		description:
-			'Comprehensive repository of full-stack engineering modules, API integrations, and MERN stack mini-applications built with modern web development practices.',
-		image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop',
-		tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'HTML5', 'CSS3'],
-		repo: 'https://github.com/Sreevanth9/fullstack-web-development-practice',
-	},
-];
-
-export const researchProjects: Project[] = [
 	{
 		title: 'Deep Learning-Based Brain Tumor Analysis',
 		description:
@@ -324,6 +257,32 @@ export const researchProjects: Project[] = [
 		reportText: 'View Report',
 	},
 	{
+		title: 'Real-Time Web Chat Application with Live Performance Metrics',
+		description:
+			'Low-latency full-duplex chat platform built with Node.js, Express, and Socket.IO featuring real-time room communication, typing indicators, message persistence, and live P95 latency monitoring dashboards.',
+		image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop',
+		tags: ['Socket.io', 'Node.js', 'Express.js', 'WebSocket', 'Latency Metrics', 'Distributed Systems'],
+		repo: 'https://github.com/Sreevanth9/chat-websocket',
+		reportUrl: '/documents/real-time-chat-paper.pdf',
+		reportText: 'View Paper',
+	},
+	{
+		title: 'EV Route Optimizer',
+		description:
+			'Smart navigation and shortest-path planning platform for electric vehicles incorporating graph algorithms (Floyd-Warshall, Bellman-Ford), traffic constraints, and charging station graphs.',
+		image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=1200&auto=format&fit=crop',
+		tags: ['JavaScript', 'Graph Algorithms', 'Leaflet.js', 'Optimization'],
+		repo: 'https://github.com/Sreevanth9/EVRouteOptimizer',
+	},
+	{
+		title: 'Student Management REST API',
+		description:
+			'Production-ready TypeScript backend API featuring modular Express routing, JWT authentication, schema validation, and structured database operations.',
+		image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop',
+		tags: ['TypeScript', 'Node.js', 'Express.js', 'REST APIs', 'JWT'],
+		repo: 'https://github.com/Sreevanth9/student-management-api',
+	},
+	{
 		title: 'Blockchain-Based Transaction Validation and Management System',
 		description:
 			'Decentralized transaction verification and ledger management framework featuring cryptographic block validation, immutable audit trails, and peer-to-peer consensus mechanisms.',
@@ -341,7 +300,43 @@ export const researchProjects: Project[] = [
 		reportUrl: '/documents/underwater-debris-detection-report.pdf',
 		reportText: 'View Report',
 	},
+	{
+		title: 'CanSat Ground Control Software',
+		description:
+			'ISRO-inspired real-time ground station interface featuring telemetry parsing, 3D attitude visualization with Three.js, mission maps via Leaflet, and live sensor charting.',
+		image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop',
+		tags: ['React.js', 'Three.js', 'Leaflet.js', 'Chart.js', 'Telemetry', 'JavaScript'],
+		repo: 'https://github.com/Sreevanth9/cansat-gcs',
+	},
+	{
+		title: 'SecureVoIP Cryptographic Communication',
+		description:
+			'Encrypted VoIP communication system in MATLAB featuring AES voice payload encryption, RSA digital signatures, and TCP socket stream transmission with hidden message encoding over SIP.',
+		image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop',
+		tags: ['MATLAB', 'AES Encryption', 'RSA', 'TCP Sockets', 'Cryptography'],
+		repo: 'https://github.com/Sreevanth9/SecureVoIP-MATLAB',
+		reportUrl: '/documents/secure-audio-sip-report.pdf',
+		reportText: 'View Report',
+	},
+	{
+		title: 'Flutter MVVM Public API App',
+		description:
+			'Cross-platform mobile application architected with MVVM pattern, clean state management, responsive ListView pagination, and robust error handling for REST APIs.',
+		image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200&auto=format&fit=crop',
+		tags: ['Flutter', 'Dart', 'MVVM', 'Mobile Development', 'REST API'],
+		repo: 'https://github.com/Sreevanth9/flutter_mvvm_app',
+	},
+	{
+		title: 'Full-Stack Web Development Practice Suite',
+		description:
+			'Comprehensive repository of full-stack engineering modules, API integrations, and MERN stack mini-applications built with modern web development practices.',
+		image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop',
+		tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'HTML5', 'CSS3'],
+		repo: 'https://github.com/Sreevanth9/fullstack-web-development-practice',
+	},
 ];
+
+export const researchProjects: Project[] = selectedProjects;
 
 export const publications: Publication[] = [
 	{
@@ -361,7 +356,7 @@ export const publications: Publication[] = [
 		conference: 'Sixteenth International Conference on Computing, Communication and Networking Technologies (ICCCNT 2025)',
 		location: 'IIT Indore (in association with IEEE EPS & AICTE)',
 		year: '2025',
-		authors: 'Yendamuri Nishanth, Tammalla Nikhil, Vadlamudi Sreevanth Chowdhary',
+		authors: 'Vadlamudi Sreevanth Chowdhary',
 		description:
 			'Presented at the Sixteenth International Conference on Computing, Communication and Networking Technologies (ICCCNT 2025) held at IIT Indore. Focuses on real-time web communication, WebSockets/Socket.IO, latency measurement, P95 latency, and live metrics dashboards.',
 		tags: ['Real-Time Web Communication', 'WebSockets', 'Socket.IO', 'Latency Measurement', 'P95 Latency', 'Live Metrics Dashboard'],
@@ -371,10 +366,7 @@ export const publications: Publication[] = [
 	},
 ];
 
-export const projects: Project[] = [
-	...selectedProjects,
-	...researchProjects,
-];
+export const projects: Project[] = selectedProjects;
 
 export type Education = {
 	degree: string;
