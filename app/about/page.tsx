@@ -13,6 +13,8 @@ import {
 	LayoutGrid,
 	Cpu,
 	ExternalLink,
+	ArrowRight,
+	Award,
 } from 'lucide-react';
 
 import {
@@ -361,28 +363,23 @@ export default function AboutPage() {
 
         </div>
 
-        <div className="flex justify-center mt-10">
-
+        <div className="flex justify-center mt-12">
           <Link
             href="/projects"
             className="
-              inline-flex items-center gap-2
-              rounded-xl
-              border border-white/10
-              bg-white/[0.03]
-              px-6 py-3
-              font-medium
-              text-sm sm:text-base
-              text-zinc-300
-              hover:text-white
-              hover:border-primary
-              hover:bg-primary/10
-              transition-all
+              inline-flex items-center justify-center
+              bg-[#20ae93] hover:bg-[#1a957d]
+              text-white font-semibold text-base sm:text-lg
+              h-14 px-8 sm:px-10
+              rounded-[24px]
+              shadow-lg shadow-[#20ae93]/25 hover:shadow-[#20ae93]/40
+              hover:-translate-y-0.5
+              transition-all duration-300
             "
           >
-            View All Projects →
+            View All Projects
+            <ArrowRight className="ml-3 h-5 w-5" />
           </Link>
-
         </div>
 
       </section>
@@ -472,26 +469,22 @@ export default function AboutPage() {
         </div>
 
         <div className="flex justify-center mt-12">
-
           <Link
             href="/skills"
             className="
-              inline-flex items-center gap-2
-              rounded-xl
-              border border-white/10
-              bg-white/[0.03]
-              px-6 py-3
-              text-sm font-medium
-              text-zinc-300
-              hover:border-primary
-              hover:text-white
-              hover:bg-primary/10
-              transition-all duration-200
+              inline-flex items-center justify-center
+              bg-[#20ae93] hover:bg-[#1a957d]
+              text-white font-semibold text-base sm:text-lg
+              h-14 px-8 sm:px-10
+              rounded-[24px]
+              shadow-lg shadow-[#20ae93]/25 hover:shadow-[#20ae93]/40
+              hover:-translate-y-0.5
+              transition-all duration-300
             "
           >
-            Explore Complete Skills Directory →
+            Explore Complete Skills Directory
+            <ArrowRight className="ml-3 h-5 w-5" />
           </Link>
-
         </div>
 
       </section>
@@ -536,54 +529,83 @@ export default function AboutPage() {
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 sm:p-10 flex flex-col justify-between">
-
             <div>
+              <div className="flex items-center justify-between mb-6 sm:mb-8 pb-4 border-b border-white/5">
+                <div>
+                  <h2 className="text-3xl sm:text-4xl font-bold text-white">
+                    Certificates
+                  </h2>
+                  <p className="text-sm text-zinc-400 mt-1">
+                    Professional credentials & technical specializations
+                  </p>
+                </div>
+                <div className="h-11 w-11 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary shrink-0">
+                  <Award size={22} />
+                </div>
+              </div>
 
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-white">
-                Certifications
-              </h2>
-
-              <div className="space-y-4">
-
+              <div className="space-y-3">
                 {certificates.slice(0, 5).map((cert) => (
                   <a
                     key={cert.title}
                     href={cert.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-start gap-3 text-zinc-300 hover:text-primary transition-all text-sm sm:text-base"
+                    className="
+                      group block p-4 rounded-2xl
+                      border border-white/5 bg-white/[0.02]
+                      hover:border-primary/30 hover:bg-white/[0.05]
+                      transition-all duration-300
+                    "
                   >
-                    <span className="text-primary mt-1">•</span>
-                    <span>{cert.title}</span>
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex-1 min-w-0">
+                        <h4 className="font-semibold text-sm sm:text-base text-white group-hover:text-primary transition-colors line-clamp-1">
+                          {cert.title}
+                        </h4>
+                        <div className="flex items-center gap-2 mt-1 text-xs text-zinc-400">
+                          <span className="text-primary font-medium">{cert.issuer}</span>
+                          <span>•</span>
+                          <span>{cert.date}</span>
+                        </div>
+                        {cert.skills && (
+                          <div className="flex flex-wrap gap-1 mt-2">
+                            {cert.skills.slice(0, 3).map((skill) => (
+                              <span
+                                key={skill}
+                                className="text-[10px] px-2 py-0.5 rounded-md bg-white/5 text-zinc-300 border border-white/5 font-normal"
+                              >
+                                {skill}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                      <ExternalLink className="h-4 w-4 text-zinc-500 group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all mt-1 shrink-0" />
+                    </div>
                   </a>
                 ))}
-
               </div>
-
             </div>
 
-            <div className="pt-6">
-
+            <div className="pt-8 flex justify-start">
               <Link
                 href="/certificates"
                 className="
-                  inline-flex
-                  rounded-xl
-                  border border-white/10
-                  px-5 py-3
-                  text-sm font-medium
-                  text-zinc-300
-                  hover:border-primary
-                  hover:text-white
-                  hover:bg-primary/10
-                  transition-all
+                  inline-flex items-center justify-center
+                  bg-[#20ae93] hover:bg-[#1a957d]
+                  text-white font-semibold text-base
+                  h-14 px-8
+                  rounded-[24px]
+                  shadow-lg shadow-[#20ae93]/25 hover:shadow-[#20ae93]/40
+                  hover:-translate-y-0.5
+                  transition-all duration-300
                 "
               >
-                View All Certificates →
+                View All Certificates
+                <ArrowRight className="ml-3 h-5 w-5" />
               </Link>
-
             </div>
-
           </div>
 
         </div>

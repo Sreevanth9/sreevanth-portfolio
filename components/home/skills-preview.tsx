@@ -269,28 +269,23 @@ export function SkillsPreview() {
 
 				</motion.div>
 
-				<div className="flex justify-center mt-14">
-
-					<Button
-						asChild
+				<div className="flex justify-center mt-16">
+					<Link
+						href="/skills"
 						className="
-							h-12
-							rounded-xl
-							px-7
-							font-semibold
+							inline-flex items-center justify-center
+							bg-[#20ae93] hover:bg-[#1a957d]
+							text-white font-semibold text-base sm:text-lg
+							h-14 px-8 sm:px-10
+							rounded-[24px]
+							shadow-lg shadow-[#20ae93]/25 hover:shadow-[#20ae93]/40
+							hover:-translate-y-0.5
+							transition-all duration-300
 						"
 					>
-
-						<Link href="/skills">
-
-							View All Skills
-
-							<ArrowRight className="ml-2 h-4 w-4" />
-
-						</Link>
-
-					</Button>
-
+						Explore Complete Skills Directory
+						<ArrowRight className="ml-3 h-5 w-5" />
+					</Link>
 				</div>
 
 			</div>
