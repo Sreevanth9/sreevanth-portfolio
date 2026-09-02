@@ -80,7 +80,7 @@ export function Footer() {
 			title: 'Work',
 			links: [
 				{ title: 'Experience', href: '/experience' },
-				{ title: 'Projects', href: '/projects' },
+				{ title: 'Projects & Publications', href: '/projects' },
 				{ title: 'Certificates', href: '/certificates' },
 			],
 		},

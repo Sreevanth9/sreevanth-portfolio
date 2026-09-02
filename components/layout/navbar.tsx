@@ -89,7 +89,7 @@ export function Navbar() {
 						</Link>
 
 						{/* DESKTOP NAV */}
-						<nav className="hidden lg:flex items-center gap-7">
+						<nav className="hidden lg:flex items-center gap-5 xl:gap-6 whitespace-nowrap">
 							{siteConfig.mainNav.map((item) => (
 								<Link
 									key={item.href}

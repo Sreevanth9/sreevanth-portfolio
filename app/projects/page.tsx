@@ -91,26 +91,6 @@ export default function ProjectsPage() {
 					initial="hidden"
 					animate="show"
 				>
-					{/* PAGE HEADER */}
-					<motion.div
-						variants={fadeInScale(0.1)}
-						className="text-center mb-16 max-w-3xl mx-auto"
-					>
-						<Badge
-							variant="outline"
-							className="border-primary/30 text-primary px-3 py-1 mb-4 text-xs font-semibold uppercase tracking-wider"
-						>
-							Portfolio Showcase
-						</Badge>
-						<h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
-							Research & Projects
-						</h1>
-						<p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-							A showcase of software platforms, deep learning frameworks, algorithmic systems,
-							and peer-reviewed conference publications.
-						</p>
-					</motion.div>
-
 					{/* ====================================================== */}
 					{/* SECTION 1: RESEARCH & ACADEMIC PROJECTS               */}
 					{/* ====================================================== */}
@@ -118,9 +98,9 @@ export default function ProjectsPage() {
 						<div className="mb-10">
 							<div className="flex items-center gap-3 mb-2">
 								<div className="h-2.5 w-2.5 rounded-full bg-primary" />
-								<h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
+								<h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white">
 									Research & Academic Projects
-								</h2>
+								</h1>
 							</div>
 							<p className="text-muted-foreground text-sm sm:text-base">
 								Software engineering platforms, deep learning architectures, graph algorithms, and IoT automation systems.

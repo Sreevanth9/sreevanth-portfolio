@@ -24,7 +24,7 @@ export const siteConfig = {
 			href: '/experience',
 		},
 		{
-			title: 'Projects',
+			title: 'Projects & Publications',
 			href: '/projects',
 		},
 		{
@@ -211,6 +211,8 @@ export const selectedProjects: Project[] = [
 		link: 'https://dentiginee.lovable.app',
 		linkText: 'Visit Project',
 		repo: 'https://github.com/Sreevanth9/dentiginee',
+		reportUrl: '/SE_FINAL.pdf',
+		reportText: 'View Report',
 	},
 	{
 		title: 'SketchForce AI – Forensic Suspect Identification System',
@@ -275,6 +277,8 @@ export const selectedProjects: Project[] = [
 		image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=1200&auto=format&fit=crop',
 		tags: ['JavaScript', 'Graph Algorithms', 'Leaflet.js', 'Optimization'],
 		repo: 'https://github.com/Sreevanth9/EVRouteOptimizer',
+		reportUrl: '/DAA_Report.pdf',
+		reportText: 'View Report',
 	},
 	{
 		title: 'Student Management REST API',
