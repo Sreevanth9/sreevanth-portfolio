@@ -1,7 +1,7 @@
 export const siteConfig = {
-	name: 'Sreevanth Chowdhary Vadlamudi',
+	name: 'Sreevanth Vadlamudi Chowdhary',
 	description:
-	'Backend-focused software engineer building scalable web applications, REST APIs, AI-assisted systems, and modern full-stack platforms.',
+		'Personal portfolio of Sreevanth Vadlamudi Chowdhary — Software engineer building scalable web applications, REST APIs, AI-assisted systems, and modern full-stack platforms.',
 	mainNav: [
 		{
 			title: 'Home',
@@ -49,28 +49,80 @@ export const siteConfig = {
 	},
 };
 
+export type ExperienceDocument = {
+	title: string;
+	url: string;
+};
+
 export type Experience = {
 	title: string;
 	company: string;
+	category?: string;
 	location: string;
 	startDate: string;
 	endDate: string;
+	period?: string;
+	summary?: string;
+	isPrimary?: boolean;
 	description: string[];
 	technologies: string[];
+	documents?: ExperienceDocument[];
 };
 
-export const experiences: Experience[] = [
+export const primaryExperience: Experience = {
+	title: 'Research & Software Development Intern',
+	company: 'India Space Lab',
+	category: 'Space Technology & Software Development',
+	location: 'Remote',
+	startDate: 'May 1, 2026',
+	endDate: 'June 15, 2026',
+	period: 'May 1, 2026 – June 15, 2026',
+	summary:
+		'Completed a Summer Internship & Technical Training Program focused on space technology, autonomous systems, and aerospace software development.',
+	isPrimary: true,
+	description: [
+		'Developed an ISRO-inspired CanSat Ground Control Software (GCS) using React.js, JavaScript, and Three.js for mission visualization and monitoring.',
+		'Implemented Python-based PID Controller Tuning and Autonomous Navigation solutions for engineering applications.',
+		'Worked on telemetry processing and mission visualization using Leaflet.js and Chart.js.',
+		'Gained hands-on exposure to CanSat & CubeSat systems, Advanced Drone Technology, Rocketry, Remote Sensing & GIS, and Disaster Management.',
+		'Completed projects involving PID Controller Tuning, Autonomous Navigation, and Designing of GCS for CanSat.',
+	],
+	technologies: [
+		'React.js',
+		'JavaScript',
+		'Three.js',
+		'Python',
+		'Leaflet.js',
+		'Chart.js',
+		'PID Control',
+		'Autonomous Navigation',
+		'Telemetry',
+		'CanSat',
+		'CubeSat',
+	],
+	documents: [
+		{
+			title: 'View Completion Letter',
+			url: '/documents/india-space-lab-completion-letter.pdf',
+		},
+		{
+			title: 'View Internship Certificate',
+			url: '/documents/india-space-lab-internship-certificate.pdf',
+		},
+	],
+};
+
+export const engineeringExperiences: Experience[] = [
 	{
 		title: 'Full-Stack Web Developer',
-		company: 'Personal and Academic Development Projects',
+		company: 'Personal & Academic Development Projects',
 		location: 'Bengaluru, India',
 		startDate: '2025',
 		endDate: '2026',
+		period: '2025 – 2026',
 		description: [
 			'Built and deployed full-stack web applications using React.js, Node.js, Express.js, and MongoDB with focus on scalable backend architecture and responsive user interfaces.',
-
 			'Developed authentication systems using JWT, bcrypt password hashing, OTP verification, and secure REST API integration for modern web applications.',
-
 			'Worked on MERN stack projects involving real-time communication, appointment systems, portfolio applications, and API-driven platforms while improving frontend and backend development workflows.',
 		],
 		technologies: [
@@ -83,18 +135,16 @@ export const experiences: Experience[] = [
 			'REST APIs',
 		],
 	},
-
 	{
-		title: 'AI and Algorithm Systems Developer',
-		company: 'Research and Engineering Projects',
+		title: 'AI & Algorithm Systems Developer',
+		company: 'Research & Engineering Projects',
 		location: 'Bengaluru, India',
 		startDate: '2025',
 		endDate: '2026',
+		period: '2025 – 2026',
 		description: [
 			'Developed AI-assisted systems related to forensic identification, dental diagnosis workflows, and intelligent image-based processing applications.',
-
 			'Implemented graph algorithms including Floyd-Warshall, Bellman-Ford, Johnson’s, and Yen’s algorithms for electric vehicle route optimization systems.',
-
 			'Integrated cloud-based services such as AWS S3 and AWS Rekognition for secure image storage, facial recognition workflows, and scalable processing pipelines.',
 		],
 		technologies: [
@@ -107,6 +157,11 @@ export const experiences: Experience[] = [
 			'SQLite',
 		],
 	},
+];
+
+export const experiences: Experience[] = [
+	primaryExperience,
+	...engineeringExperiences,
 ];
 
 export type Project = {
@@ -344,23 +399,36 @@ import type { LucideIcon } from 'lucide-react';
 import { FaJava, FaDatabase, FaServer, FaCode, FaAws } from 'react-icons/fa';
 import {
 	SiJavascript,
+	SiTypescript,
 	SiReact,
-	SiNodedotjs,
-	SiExpress,
-	SiMongodb,
-	SiGithub,
-	SiLinux,
-	SiHtml5,
-	SiCss,
-	SiJsonwebtokens,
-	SiCplusplus,
 	SiNextdotjs,
 	SiTailwindcss,
-	SiMysql,
-	SiPostman,
-	SiPython,
+	SiHtml5,
+	SiCss,
+	SiFramer,
+	SiRedux,
+	SiReactrouter,
+	SiThreedotjs,
+	SiLeaflet,
+	SiChartdotjs,
+	SiNodedotjs,
+	SiExpress,
 	SiSocketdotio,
+	SiMongodb,
+	SiPostgresql,
+	SiSupabase,
+	SiMysql,
+	SiOpenai,
+	SiOpencv,
+	SiPytorch,
+	SiDocker,
 	SiVercel,
+	SiJsonwebtokens,
+	SiPython,
+	SiCplusplus,
+	SiGithub,
+	SiLinux,
+	SiPostman,
 	SiNpm,
 } from 'react-icons/si';
 import { VscCode } from 'react-icons/vsc';
@@ -374,17 +442,43 @@ import {
 	Wrench,
 	Cloud,
 	BrainCircuit,
+	Cpu,
+	Mail,
+	Send,
+	Sparkles,
+	Bot,
+	Workflow,
+	Terminal,
+	Zap,
+	Eye,
+	Scan,
+	Layers,
+	Network,
+	Globe,
+	Shield,
+	KeyRound,
+	Users,
+	Gauge,
+	Lock,
+	CheckSquare,
+	Boxes,
+	GitBranch,
+	Share2,
+	Rocket,
 } from 'lucide-react';
 
 export type SkillIcon = IconType | LucideIcon;
 
+export type SkillItem = {
+	name: string;
+	icon: SkillIcon;
+	featured?: boolean;
+};
+
 export type SkillCategory = {
 	title: string;
 	icon: SkillIcon;
-	skills: {
-		name: string;
-		icon: SkillIcon;
-	}[];
+	skills: SkillItem[];
 };
 
 export const skillCategories: SkillCategory[] = [
@@ -392,8 +486,9 @@ export const skillCategories: SkillCategory[] = [
 		title: 'Programming Languages',
 		icon: Code2,
 		skills: [
-			{ name: 'Java', icon: FaJava },
-			{ name: 'JavaScript', icon: SiJavascript },
+			{ name: 'Java', icon: FaJava, featured: true },
+			{ name: 'JavaScript (ES6+)', icon: SiJavascript, featured: true },
+			{ name: 'TypeScript', icon: SiTypescript, featured: true },
 			{ name: 'Python', icon: SiPython },
 			{ name: 'C', icon: FaCode },
 			{ name: 'C++', icon: SiCplusplus },
@@ -404,35 +499,81 @@ export const skillCategories: SkillCategory[] = [
 		title: 'Frontend Development',
 		icon: LayoutGrid,
 		skills: [
-			{ name: 'React.js', icon: SiReact },
+			{ name: 'React.js', icon: SiReact, featured: true },
 			{ name: 'Next.js', icon: SiNextdotjs },
-			{ name: 'Tailwind CSS', icon: SiTailwindcss },
+			{ name: 'TypeScript', icon: SiTypescript, featured: true },
+			{ name: 'JavaScript', icon: SiJavascript, featured: true },
 			{ name: 'HTML5', icon: SiHtml5 },
 			{ name: 'CSS3', icon: SiCss },
-			{ name: 'Responsive UI Design', icon: FaCode },
-			{ name: 'Framer Motion', icon: FaCode },
+			{ name: 'Tailwind CSS', icon: SiTailwindcss },
+			{ name: 'Framer Motion', icon: SiFramer },
+			{ name: 'Redux Toolkit', icon: SiRedux },
+			{ name: 'React Router', icon: SiReactrouter },
+			{ name: 'Three.js', icon: SiThreedotjs },
+			{ name: 'Leaflet.js', icon: SiLeaflet },
+			{ name: 'Chart.js', icon: SiChartdotjs },
 		],
 	},
 	{
 		title: 'Backend Development',
 		icon: Server,
 		skills: [
-			{ name: 'Node.js', icon: SiNodedotjs },
-			{ name: 'Express.js', icon: SiExpress },
-			{ name: 'REST APIs', icon: TbApi },
+			{ name: 'Node.js', icon: SiNodedotjs, featured: true },
+			{ name: 'Express.js', icon: SiExpress, featured: true },
+			{ name: 'REST APIs', icon: TbApi, featured: true },
 			{ name: 'Socket.io', icon: SiSocketdotio },
+			{ name: 'Server-Sent Events (SSE)', icon: Zap },
 			{ name: 'API Integration', icon: TbApi },
-			{ name: 'Object-Oriented Programming', icon: FaServer },
+			{ name: 'Nodemailer', icon: Mail },
+			{ name: 'SMTP', icon: Send },
 		],
 	},
 	{
 		title: 'Databases',
 		icon: Database,
 		skills: [
-			{ name: 'MongoDB', icon: SiMongodb },
+			{ name: 'MongoDB', icon: SiMongodb, featured: true },
 			{ name: 'Mongoose', icon: SiMongodb },
-			{ name: 'SQLite', icon: FaDatabase },
+			{ name: 'PostgreSQL', icon: SiPostgresql, featured: true },
+			{ name: 'Supabase', icon: SiSupabase, featured: true },
 			{ name: 'MySQL', icon: SiMysql },
+			{ name: 'Oracle SQL', icon: FaDatabase },
+			{ name: 'SQLite', icon: FaDatabase },
+		],
+	},
+	{
+		title: 'AI & Machine Learning',
+		icon: BrainCircuit,
+		skills: [
+			{ name: 'Machine Learning', icon: BrainCircuit },
+			{ name: 'Deep Learning', icon: Layers },
+			{ name: 'Computer Vision', icon: Eye },
+			{ name: 'Generative AI', icon: Sparkles, featured: true },
+			{ name: 'AI Agents', icon: Bot, featured: true },
+			{ name: 'Function Calling', icon: Workflow },
+			{ name: 'Multimodal AI', icon: Cpu },
+			{ name: 'Prompt Engineering', icon: Terminal },
+			{ name: 'OpenAI API', icon: SiOpenai },
+			{ name: 'Groq', icon: Zap },
+			{ name: 'OpenCV', icon: SiOpencv },
+			{ name: 'PyTorch', icon: SiPytorch },
+			{ name: 'YOLO', icon: Scan },
+		],
+	},
+	{
+		title: 'Cloud & DevOps',
+		icon: Cloud,
+		skills: [
+			{ name: 'AWS', icon: FaAws, featured: true },
+			{ name: 'AWS S3', icon: FaAws },
+			{ name: 'AWS Rekognition', icon: Eye },
+			{ name: 'AWS SDK', icon: FaAws },
+			{ name: 'AWS Amplify', icon: FaAws },
+			{ name: 'AWS App Runner', icon: Rocket },
+			{ name: 'Docker', icon: SiDocker, featured: true },
+			{ name: 'Docker Compose', icon: SiDocker },
+			{ name: 'CloudFront', icon: Globe },
+			{ name: 'Vercel', icon: SiVercel },
 		],
 	},
 	{
@@ -441,45 +582,37 @@ export const skillCategories: SkillCategory[] = [
 		skills: [
 			{ name: 'JWT Authentication', icon: SiJsonwebtokens },
 			{ name: 'bcrypt', icon: ShieldCheck },
-			{ name: 'OTP Authentication', icon: ShieldCheck },
-			{ name: 'Authentication Systems', icon: ShieldCheck },
-			{ name: 'Cryptography', icon: ShieldCheck },
+			{ name: 'OTP Authentication', icon: KeyRound },
+			{ name: 'Role-Based Access Control', icon: Users },
+			{ name: 'Supabase Auth', icon: SiSupabase },
+			{ name: 'Helmet.js', icon: Shield },
+			{ name: 'API Rate Limiting', icon: Gauge },
+			{ name: 'Input Validation', icon: CheckSquare },
+			{ name: 'XSS Protection', icon: Lock },
 		],
 	},
 	{
-		title: 'AI / Machine Learning',
-		icon: BrainCircuit,
+		title: 'Core Computer Science',
+		icon: Cpu,
 		skills: [
-			{ name: 'Machine Learning', icon: BrainCircuit },
-			{ name: 'Deep Learning', icon: BrainCircuit },
-			{ name: 'Computer Vision', icon: BrainCircuit },
-			{ name: 'PyTorch', icon: BrainCircuit },
-			{ name: 'YOLO', icon: BrainCircuit },
-			{ name: 'Prompt Engineering', icon: BrainCircuit },
-			{ name: 'Generative AI', icon: BrainCircuit },
-		],
-	},
-	{
-		title: 'Cloud & Deployment',
-		icon: Cloud,
-		skills: [
-			{ name: 'AWS S3', icon: FaAws },
-			{ name: 'AWS Rekognition', icon: FaAws },
-			{ name: 'Oracle OCI', icon: Cloud },
-			{ name: 'Vercel', icon: SiVercel },
-			{ name: 'EmailJS', icon: FaCode },
+			{ name: 'Data Structures & Algorithms', icon: GitBranch },
+			{ name: 'Object-Oriented Programming', icon: Boxes },
+			{ name: 'DBMS', icon: Database },
+			{ name: 'Operating Systems', icon: Terminal },
+			{ name: 'Computer Networks', icon: Network },
 		],
 	},
 	{
 		title: 'Tools & Platforms',
 		icon: Wrench,
 		skills: [
-			{ name: 'Git', icon: SiGithub },
+			{ name: 'Git', icon: GitBranch },
 			{ name: 'GitHub', icon: SiGithub },
 			{ name: 'Linux', icon: SiLinux },
 			{ name: 'VS Code', icon: VscCode },
 			{ name: 'Postman', icon: SiPostman },
 			{ name: 'npm', icon: SiNpm },
+			{ name: 'Vercel', icon: SiVercel },
 		],
 	},
 ];
@@ -492,35 +625,103 @@ export type SkillGroup = {
 export const skillGroups: SkillGroup[] = [
 	{
 		title: 'Programming Languages',
-		skills: ['Java', 'JavaScript', 'Python', 'C', 'C++', 'SQL'],
+		skills: ['Java', 'JavaScript (ES6+)', 'TypeScript', 'Python', 'C', 'C++', 'SQL'],
 	},
 	{
 		title: 'Frontend Development',
-		skills: ['React.js', 'Next.js', 'Tailwind CSS', 'HTML5', 'CSS3', 'Responsive Web Design', 'Framer Motion'],
+		skills: [
+			'React.js',
+			'Next.js',
+			'TypeScript',
+			'JavaScript',
+			'HTML5',
+			'CSS3',
+			'Tailwind CSS',
+			'Framer Motion',
+			'Redux Toolkit',
+			'React Router',
+			'Three.js',
+			'Leaflet.js',
+			'Chart.js',
+		],
 	},
 	{
 		title: 'Backend Development',
-		skills: ['Node.js', 'Express.js', 'REST APIs', 'Socket.io', 'JWT Authentication', 'bcrypt', 'OTP Authentication', 'API Integration'],
+		skills: [
+			'Node.js',
+			'Express.js',
+			'REST APIs',
+			'Socket.io',
+			'Server-Sent Events (SSE)',
+			'API Integration',
+			'Nodemailer',
+			'SMTP',
+		],
 	},
 	{
 		title: 'Databases',
-		skills: ['MongoDB', 'Mongoose', 'SQLite', 'MySQL'],
+		skills: ['MongoDB', 'Mongoose', 'PostgreSQL', 'Supabase', 'MySQL', 'Oracle SQL', 'SQLite'],
 	},
 	{
-		title: 'AI / Machine Learning',
-		skills: ['Machine Learning', 'Deep Learning', 'Computer Vision', 'Image Processing', 'PyTorch', 'NumPy', 'YOLO', 'UNET', 'Prompt Engineering', 'Generative AI'],
+		title: 'AI & Machine Learning',
+		skills: [
+			'Machine Learning',
+			'Deep Learning',
+			'Computer Vision',
+			'Generative AI',
+			'AI Agents',
+			'Function Calling',
+			'Multimodal AI',
+			'Prompt Engineering',
+			'OpenAI API',
+			'Groq',
+			'OpenCV',
+			'PyTorch',
+			'YOLO',
+		],
 	},
 	{
-		title: 'Cloud & Deployment',
-		skills: ['AWS S3', 'AWS Rekognition', 'Oracle OCI Generative AI', 'Vercel', 'EmailJS', 'Cloud Computing'],
+		title: 'Cloud & DevOps',
+		skills: [
+			'AWS',
+			'AWS S3',
+			'AWS Rekognition',
+			'AWS SDK',
+			'AWS Amplify',
+			'AWS App Runner',
+			'Docker',
+			'Docker Compose',
+			'CloudFront',
+			'Vercel',
+		],
 	},
 	{
-		title: 'Tools & Platforms',
-		skills: ['Git', 'GitHub', 'Linux', 'VS Code', 'Postman', 'npm'],
+		title: 'Authentication & Security',
+		skills: [
+			'JWT Authentication',
+			'bcrypt',
+			'OTP Authentication',
+			'Role-Based Access Control',
+			'Supabase Auth',
+			'Helmet.js',
+			'API Rate Limiting',
+			'Input Validation',
+			'XSS Protection',
+		],
 	},
 	{
 		title: 'Core Computer Science',
-		skills: ['Data Structures & Algorithms', 'Object-Oriented Programming', 'Problem Solving', 'Graph Algorithms', 'Network Programming', 'Authentication Systems', 'Cryptography'],
+		skills: [
+			'Data Structures & Algorithms',
+			'Object-Oriented Programming',
+			'DBMS',
+			'Operating Systems',
+			'Computer Networks',
+		],
+	},
+	{
+		title: 'Tools & Platforms',
+		skills: ['Git', 'GitHub', 'Linux', 'VS Code', 'Postman', 'npm', 'Vercel'],
 	},
 ];
 

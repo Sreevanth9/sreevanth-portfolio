@@ -33,7 +33,7 @@ export function HeroSection() {
 	const stats = [
 		{
 			icon: <Github className="h-5 w-5" />,
-			value: '10+',
+			value: '15+',
 			label: 'GitHub Projects',
 			href: '/projects',
 		},
@@ -45,7 +45,7 @@ export function HeroSection() {
 		},
 		{
 			icon: <Linkedin className="h-5 w-5" />,
-			value: '1000+',
+			value: '3500+',
 			label: 'LinkedIn Followers',
 			href: siteConfig.links.linkedin,
 		},

@@ -84,7 +84,7 @@ export function Navbar() {
 
 					<div className="flex items-center gap-10">
 
-						<Link href="/" className="flex items-center">
+						<Link href="/" className="flex items-center" aria-label="Sreevanth Vadlamudi Chowdhary Home">
 
 							<motion.div
 								whileHover={{ scale: 1.03 }}
@@ -188,6 +188,7 @@ export function Navbar() {
 
 									<Link
 										href="/"
+										aria-label="Sreevanth Vadlamudi Chowdhary Home"
 										className="
 											text-3xl
 											font-extrabold

@@ -26,11 +26,12 @@ export default function SkillsPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.08, duration: 0.45 }}
                 whileHover={{ y: -4 }}
+                className="h-full"
               >
                 <Card className="h-full card-gradient shadow-2xl shadow-primary/10">
                   <CardContent className="relative p-7">
                     <div className="flex items-center gap-3 mb-6">
-                      <div className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-white/5 border border-white/10 text-primary shadow-inner shadow-black/10">
+                      <div className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-3xl bg-white/5 border border-white/10 text-primary shadow-inner shadow-black/10">
                         <CategoryIcon className="h-7 w-7" />
                       </div>
                       <div>
@@ -43,7 +44,7 @@ export default function SkillsPage() {
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {category.skills.map((skill, idx) => {
                         const SkillIcon = skill.icon;
                         return (
@@ -51,7 +52,7 @@ export default function SkillsPage() {
                             key={idx}
                             className="flex items-center gap-3 rounded-3xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-muted-foreground transition-all duration-300 hover:border-primary/30 hover:bg-white/10"
                           >
-                            <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[#0f172a] text-primary">
+                            <div className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#0f172a] text-primary">
                               <SkillIcon className="h-5 w-5" />
                             </div>
                             <span className="font-medium text-sm text-white">

@@ -102,9 +102,9 @@ export function Footer() {
 					{/* LEFT */}
 					<div className="md:col-span-1">
 
-						<Link href="/" className="inline-block">
+						<Link href="/" className="inline-block" aria-label="Sreevanth Vadlamudi Chowdhary Home">
 							<span className="text-2xl font-bold text-gradient">
-								Sreevanth Portfolio
+								Sreevanth Vadlamudi Chowdhary
 							</span>
 						</Link>
 
@@ -184,7 +184,7 @@ export function Footer() {
 				<div className="flex flex-col sm:flex-row items-center justify-between text-sm">
 
 					<p className="text-muted-foreground text-center sm:text-left">
-						© {currentYear} Sreevanth Vadlamudi.
+						© {currentYear} Sreevanth Vadlamudi Chowdhary.
 						Built for backend systems, APIs, and scalable product engineering.
 					</p>
 

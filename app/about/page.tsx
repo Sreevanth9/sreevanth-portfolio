@@ -91,7 +91,7 @@ export default function AboutPage() {
             </p>
 
             <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6">
-              Sreevanth Chowdhary Vadlamudi
+              Sreevanth Vadlamudi Chowdhary
             </h1>
 
             <p className="text-xl text-zinc-300 mb-8">
@@ -99,9 +99,7 @@ export default function AboutPage() {
             </p>
 
             <p className="text-zinc-300 text-lg leading-9 max-w-2xl mb-10">
-              Building scalable systems, REST APIs, and modern
-              full-stack web applications with clean architecture
-              and performance-driven engineering.
+              I am Sreevanth Vadlamudi Chowdhary (also known professionally as Sreevanth Vadlamudi or Sreevanth Chowdhary), a Computer Science undergraduate at Amrita Vishwa Vidyapeetham, Bengaluru. I focus on building scalable backend systems, REST APIs, and modern full-stack web applications with clean architecture and performance-driven engineering.
             </p>
 
             <div className="grid grid-cols-2 gap-4 max-w-xl">
@@ -119,6 +117,7 @@ export default function AboutPage() {
               <a
                 href={siteConfig.links.github}
                 target="_blank"
+                rel="noreferrer"
                 className="
 									flex items-center gap-3
 									rounded-xl
@@ -137,6 +136,7 @@ export default function AboutPage() {
               <a
                 href={siteConfig.links.linkedin}
                 target="_blank"
+                rel="noreferrer"
                 className="
 									flex items-center gap-3
 									rounded-xl
@@ -181,7 +181,7 @@ export default function AboutPage() {
 
               <Image
                 src="/sreevanth.jpeg"
-                alt="Sreevanth"
+                alt="Sreevanth Vadlamudi Chowdhary"
                 width={430}
                 height={430}
                 priority

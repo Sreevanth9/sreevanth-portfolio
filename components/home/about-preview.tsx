@@ -61,7 +61,7 @@ export function AboutPreview() {
 
 							<Image
 								src="/sreevanth.jpeg"
-								alt="Sreevanth Chowdhary Vadlamudi"
+								alt="Sreevanth Vadlamudi Chowdhary"
 								fill
 								priority
 								className="object-cover"
