@@ -179,17 +179,17 @@ export function ProjectsPreview() {
 												"
 											>
 
-												<Link
+												<a
 													href={project.link}
 													target="_blank"
-													rel="noreferrer"
+													rel="noopener noreferrer"
 												>
 
 													<ExternalLink className="h-4 w-4 mr-2" />
 
-													Live Demo
+													{project.linkText || 'Visit Platform'}
 
-												</Link>
+												</a>
 
 											</Button>
 
@@ -200,14 +200,7 @@ export function ProjectsPreview() {
 											<Button
 												size="sm"
 												variant="outline"
-												type="button"
-												onClick={() =>
-													window.open(
-														project.repo,
-														'_blank',
-														'noopener,noreferrer'
-													)
-												}
+												asChild
 												className="
 													rounded-xl
 													h-11
@@ -218,9 +211,17 @@ export function ProjectsPreview() {
 												"
 											>
 
-												<Github className="h-4 w-4 mr-2" />
+												<a
+													href={project.repo}
+													target="_blank"
+													rel="noopener noreferrer"
+												>
 
-												Repository
+													<Github className="h-4 w-4 mr-2" />
+
+													GitHub
+
+												</a>
 
 											</Button>
 

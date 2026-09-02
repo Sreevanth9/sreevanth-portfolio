@@ -58,21 +58,21 @@ export default function ProjectsPage() {
 											))}
 										</div>
 									</CardContent>
-									<CardFooter className="p-6 pt-0 gap-2 relative z-10">
+									<CardFooter className="p-6 pt-0 gap-3 relative z-10">
 										{project.link && (
-											<Button size="sm" variant="outline" asChild className="relative z-10">
+											<Button size="sm" asChild className="relative z-10 bg-primary hover:bg-primary/90 text-primary-foreground shadow-md shadow-primary/20">
 												<a
 													href={project.link}
 													target="_blank"
 													rel="noopener noreferrer"
 												>
 													<ExternalLink className="h-4 w-4 mr-2" />
-													Demo
+													{project.linkText || 'Visit Platform'}
 												</a>
 											</Button>
 										)}
 										{project.repo && (
-											<Button size="sm" asChild className="relative z-10">
+											<Button size="sm" variant={project.link ? "outline" : "default"} asChild className="relative z-10">
 												<a
 													href={project.repo}
 													target="_blank"

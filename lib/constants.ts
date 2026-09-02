@@ -170,89 +170,126 @@ export type Project = {
 	image: string;
 	tags: string[];
 	link?: string;
+	linkText?: string;
 	repo?: string;
 };
 
 export const projects: Project[] = [
 	{
-		title: 'Full Stack Web Development Practice',
+		title: 'IntelliFarm AI – Smart Cloud Agriculture Platform',
 		description:
-			'Practice projects and applications built while learning full stack web development.',
-		image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
-		tags: ['React', 'Node.js', 'MongoDB'],
-		repo: 'https://github.com/Sreevanth9/fullstack-web-development-practice',
+			'Cloud-powered smart agriculture platform providing crop disease diagnosis via Groq Qwen Vision AI, real-time weather analytics, and AWS S3 direct pre-signed photo uploads.',
+		image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1200&auto=format&fit=crop',
+		tags: ['React.js', 'Node.js', 'Express.js', 'AWS S3', 'AWS App Runner', 'Supabase', 'Groq AI'],
+		link: 'https://intellifarm-ai.vercel.app',
+		linkText: 'Visit Platform',
+		repo: 'https://github.com/Sreevanth9/IntelliFarm-AI',
 	},
 	{
-		title: 'SecureVoIP MATLAB',
+		title: 'AI-Powered Dental Diagnosis Platform (Dentiginee)',
 		description:
-			'Secure VoIP communication simulation and encryption techniques using MATLAB.',
-		image: 'https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpeg',
-		tags: ['MATLAB', 'VoIP', 'Security'],
-		repo: 'https://github.com/Sreevanth9/SecureVoIP-MATLAB',
+			'Intelligent healthcare platform featuring AI symptom assessment, appointment scheduling, automated doctor availability management, and an interactive dental guidance chatbot.',
+		image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200&auto=format&fit=crop',
+		tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Chatbot AI'],
+		link: 'https://dentiginee.lovable.app',
+		linkText: 'Visit Platform',
+		repo: 'https://github.com/Sreevanth9/dentiginee',
 	},
 	{
-		title: 'Chat WebSocket',
+		title: 'SketchForce AI – Forensic Suspect Identification System',
 		description:
-			'Real-time chat application developed using WebSocket technology.',
-		image: 'https://images.pexels.com/photos/5053848/pexels-photo-5053848.jpeg',
-		tags: ['WebSocket', 'Node.js', 'Realtime'],
+			'Forensic suspect matching platform leveraging OpenCV and AWS Rekognition facial comparison, secure OTP authentication, role-based access control, and AWS S3 digital evidence storage.',
+		image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop',
+		tags: ['Java', 'JavaFX', 'OpenCV', 'AWS Rekognition', 'AWS S3', 'SQLite'],
+		repo: 'https://github.com/Sreevanth9/Sketch-Force-AI',
+	},
+	{
+		title: 'CanSat Ground Control Software',
+		description:
+			'ISRO-inspired real-time ground station interface featuring telemetry parsing, 3D attitude visualization with Three.js, mission maps via Leaflet, and live sensor charting.',
+		image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop',
+		tags: ['React.js', 'Three.js', 'Leaflet.js', 'Chart.js', 'Telemetry', 'JavaScript'],
+		repo: 'https://github.com/Sreevanth9/cansat-gcs',
+	},
+	{
+		title: 'Real-Time Web Chat Application',
+		description:
+			'Low-latency chat system built with Node.js, Express, and Socket.IO featuring live performance metrics, room management, typing indicators, and message persistence. Published at ICCCNT 2025.',
+		image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop',
+		tags: ['Socket.io', 'Node.js', 'Express.js', 'WebSocket', 'Realtime'],
 		repo: 'https://github.com/Sreevanth9/chat-websocket',
-	},
-	{
-		title: 'Pokemon Finder',
-		description:
-			'Pokemon search application using API integration and dynamic UI rendering.',
-		image: 'https://images.pexels.com/photos/9072313/pexels-photo-9072313.jpeg',
-		tags: ['React', 'API', 'JavaScript'],
-		repo: 'https://github.com/Sreevanth9/Pokemon_finder',
-	},
-	{
-		title: 'Flutter MVVM App',
-		description:
-			'Flutter mobile application following MVVM architecture principles.',
-		image: 'https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg',
-		tags: ['Flutter', 'Dart', 'MVVM'],
-		repo: 'https://github.com/Sreevanth9/flutter_mvvm_app',
 	},
 	{
 		title: 'EV Route Optimizer',
 		description:
-			'Electric vehicle route optimization system using shortest path algorithms.',
-		image: 'https://images.pexels.com/photos/110844/pexels-photo-110844.jpeg',
-		tags: ['Python', 'Algorithms', 'Routing'],
+			'Smart navigation and shortest-path planning platform for electric vehicles incorporating graph algorithms (Floyd-Warshall, Bellman-Ford), traffic constraints, and charging station graphs.',
+		image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=1200&auto=format&fit=crop',
+		tags: ['JavaScript', 'Graph Algorithms', 'Leaflet.js', 'Optimization'],
 		repo: 'https://github.com/Sreevanth9/EVRouteOptimizer',
 	},
 	{
-		title: 'Java SE Learning Journey',
+		title: 'Student Management REST API',
 		description:
-			'Collection of Java SE concepts, examples, and practice programs.',
-		image: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg',
-		tags: ['Java', 'OOP'],
-		repo: 'https://github.com/Sreevanth9/java-se-learning-journey',
+			'Production-ready TypeScript backend API featuring modular Express routing, JWT authentication, schema validation, and structured database operations.',
+		image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop',
+		tags: ['TypeScript', 'Node.js', 'Express.js', 'REST APIs', 'JWT'],
+		repo: 'https://github.com/Sreevanth9/student-management-api',
 	},
 	{
-		title: 'Data Analysis Case Studies',
+		title: 'SecureVoIP Cryptographic Communication',
 		description:
-			'Data analysis projects and case studies using Python and visualization tools.',
-		image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg',
-		tags: ['Python', 'Pandas', 'Power BI'],
+			'Encrypted VoIP communication system in MATLAB featuring AES voice payload encryption, RSA digital signatures, and TCP socket stream transmission.',
+		image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop',
+		tags: ['MATLAB', 'AES Encryption', 'RSA', 'TCP Sockets', 'Cryptography'],
+		repo: 'https://github.com/Sreevanth9/SecureVoIP-MATLAB',
+	},
+	{
+		title: 'Flutter MVVM Public API App',
+		description:
+			'Cross-platform mobile application architected with MVVM pattern, clean state management, responsive ListView pagination, and error handling for REST APIs.',
+		image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200&auto=format&fit=crop',
+		tags: ['Flutter', 'Dart', 'MVVM', 'Mobile Development', 'REST API'],
+		repo: 'https://github.com/Sreevanth9/flutter_mvvm_app',
+	},
+	{
+		title: 'Full-Stack Web Development Practice Suite',
+		description:
+			'Comprehensive repository of full-stack engineering modules, API integrations, and MERN stack mini-applications built with modern web development practices.',
+		image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop',
+		tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'HTML5', 'CSS3'],
+		repo: 'https://github.com/Sreevanth9/fullstack-web-development-practice',
+	},
+	{
+		title: 'Data Analysis & Analytics Case Studies',
+		description:
+			'Exploratory data analysis case studies applying Pandas, NumPy, statistical modeling, and Power BI visualization across real-world datasets.',
+		image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
+		tags: ['Python', 'Pandas', 'NumPy', 'Data Analysis', 'Jupyter'],
 		repo: 'https://github.com/Sreevanth9/data-analysis-case-studies',
 	},
 	{
-		title: 'Dentiginee',
+		title: 'Machine Learning Foundations & Implementations',
 		description:
-			'Dental appointment booking and dentist finder MERN application.',
-		image: 'https://images.pexels.com/photos/3845653/pexels-photo-3845653.jpeg',
-		tags: ['MERN', 'Authentication', 'MongoDB'],
-		repo: 'https://github.com/Sreevanth9/dentiginee',
+			'Machine learning notebooks covering supervised and unsupervised learning algorithms, model evaluation, and classification pipelines.',
+		image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1200&auto=format&fit=crop',
+		tags: ['Python', 'Machine Learning', 'Scikit-Learn', 'Jupyter'],
+		repo: 'https://github.com/Sreevanth9/ML',
 	},
 	{
-		title: 'Machine Learning',
+		title: 'Pokemon Finder Async Web App',
 		description:
-			'Machine learning models, experiments, and implementations.',
-		image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg',
-		tags: ['Machine Learning', 'Python'],
-		repo: 'https://github.com/Sreevanth9/ML',
+			'Asynchronous web application consuming PokéAPI with dynamic card rendering, multi-stat filtering, and responsive CSS UI.',
+		image: 'https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?q=80&w=1200&auto=format&fit=crop',
+		tags: ['JavaScript', 'REST API', 'Async/Await', 'CSS3'],
+		repo: 'https://github.com/Sreevanth9/Pokemon_finder',
+	},
+	{
+		title: 'Java SE Fundamentals & OOP Architecture',
+		description:
+			'Hands-on implementations of core Java SE architecture, OOP principles, collection framework algorithms, concurrency, and competitive programming problems.',
+		image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop',
+		tags: ['Java', 'OOP', 'Data Structures', 'Algorithms'],
+		repo: 'https://github.com/Sreevanth9/java-se-learning-journey',
 	},
 ];
 
