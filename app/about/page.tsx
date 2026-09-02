@@ -547,7 +547,7 @@ export default function AboutPage() {
               <div className="space-y-3">
                 {certificates
                   .filter((cert) => !cert.title.toLowerCase().includes('claude'))
-                  .slice(0, 5)
+                  .slice(0, 3)
                   .map((cert) => (
                   <a
                     key={cert.title}

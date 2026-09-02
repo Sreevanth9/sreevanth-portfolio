@@ -716,7 +716,6 @@ export const skillCategories: SkillCategory[] = [
 		skills: [
 			{ name: 'Node.js', icon: SiNodedotjs, featured: true },
 			{ name: 'Express.js', icon: SiExpress, featured: true },
-			{ name: 'Apache Kafka', icon: Server, featured: true },
 			{ name: 'REST APIs', icon: TbApi, featured: true },
 			{ name: 'Socket.io', icon: SiSocketdotio },
 			{ name: 'Server-Sent Events (SSE)', icon: Zap },
@@ -861,7 +860,6 @@ export const skillGroups: SkillGroup[] = [
 		skills: [
 			'Node.js',
 			'Express.js',
-			'Apache Kafka',
 			'REST APIs',
 			'Socket.io',
 			'Server-Sent Events (SSE)',
