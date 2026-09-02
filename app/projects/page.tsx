@@ -15,6 +15,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
+import { SectionHeader } from '@/components/ui/section-header';
 import {
 	selectedProjects,
 	publications,
@@ -95,17 +96,10 @@ export default function ProjectsPage() {
 					{/* SECTION 1: RESEARCH & ACADEMIC PROJECTS               */}
 					{/* ====================================================== */}
 					<section className="mb-24">
-						<div className="mb-10">
-							<div className="flex items-center gap-3 mb-2">
-								<div className="h-2.5 w-2.5 rounded-full bg-primary" />
-								<h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white">
-									Research & Academic Projects
-								</h1>
-							</div>
-							<p className="text-muted-foreground text-sm sm:text-base">
-								Software engineering platforms, deep learning architectures, graph algorithms, and IoT automation systems.
-							</p>
-						</div>
+						<SectionHeader
+							title="Research & Academic Projects"
+							description="Software engineering platforms, deep learning architectures, graph algorithms, and IoT automation systems."
+						/>
 
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 							{selectedProjects.map((project, index) => (
@@ -161,17 +155,11 @@ export default function ProjectsPage() {
 					{/* SECTION 2: PUBLICATIONS                               */}
 					{/* ====================================================== */}
 					<section className="mb-12">
-						<div className="mb-10">
-							<div className="flex items-center gap-3 mb-2">
-								<div className="h-2.5 w-2.5 rounded-full bg-amber-400" />
-								<h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-									Publications
-								</h2>
-							</div>
-							<p className="text-muted-foreground text-sm sm:text-base">
-								Peer-reviewed research and presentations at international IEEE and Scopus-indexed conferences.
-							</p>
-						</div>
+						<SectionHeader
+							title="Publications"
+							description="Peer-reviewed research and presentations at international IEEE and Scopus-indexed conferences."
+							isH2
+						/>
 
 						<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 							{publications.map((pub, index) => (

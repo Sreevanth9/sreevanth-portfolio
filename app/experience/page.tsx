@@ -14,6 +14,7 @@ import {
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { SectionHeader } from '@/components/ui/section-header';
 import {
 	primaryExperience,
 	engineeringExperiences,
@@ -31,21 +32,10 @@ export default function ExperiencePage() {
 					className="max-w-4xl mx-auto space-y-12"
 				>
 					{/* Page Header */}
-					<div>
-						<motion.h1
-							variants={fadeIn('down', 0.2)}
-							className="text-4xl font-bold mb-4"
-						>
-							Professional Experience
-						</motion.h1>
-
-						<motion.p
-							variants={fadeIn('down', 0.3)}
-							className="text-lg text-muted-foreground leading-8"
-						>
-							Real-world engineering, research, and software development experience.
-						</motion.p>
-					</div>
+					<SectionHeader
+						title="Professional Experience"
+						description="Real-world engineering, research, and software development experience."
+					/>
 
 					{/* Primary Experience Card: India Space Lab */}
 					<motion.div variants={fadeIn('up', 0.3)}>

@@ -1,7 +1,7 @@
 export const siteConfig = {
-	name: 'Sreevanth Chowdhary Vadlamudi',
+	name: 'Vadlamudi Sreevanth Chowdhary',
 	description:
-		'Personal portfolio of Sreevanth Chowdhary Vadlamudi — Software engineer building scalable web applications, REST APIs, AI-assisted systems, and modern full-stack platforms.',
+		'Personal portfolio of Vadlamudi Sreevanth Chowdhary — Software engineer building scalable web applications, REST APIs, AI-assisted systems, and modern full-stack platforms.',
 	mainNav: [
 		{
 			title: 'Home',
@@ -436,6 +436,24 @@ export type Certificate = {
 
 export const certificates: Certificate[] = [
 	{
+		title: 'Ultimate Web Development Course 2026 - Build Modern Websites: MERN Stack',
+		issuer: 'Udemy',
+		date: 'May 7, 2026',
+		description:
+			'Modern full-stack web development training covering React, Node.js, Express, MongoDB, REST APIs, and responsive UI design.',
+		skills: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+		url: '/certificates/udemy-mern-stack-development.jpg',
+	},
+	{
+		title: 'Java Programming - Beginner to Master: Core Java Programming',
+		issuer: 'Udemy',
+		date: 'January 26, 2026',
+		description:
+			'Core Java programming concepts including OOP, collections framework, exception handling, multithreading, and system design.',
+		skills: ['Java', 'OOP', 'Collections', 'Multithreading'],
+		url: '/certificates/udemy-java-beginner-to-master.pdf',
+	},
+	{
 		title: 'Oracle Cloud Infrastructure 2025 Certified Generative AI Professional',
 		issuer: 'Oracle',
 		date: 'September 16, 2025',
@@ -463,15 +481,6 @@ export const certificates: Certificate[] = [
 		url: '/certificates/claude-101.pdf',
 	},
 	{
-		title: 'Career Essentials in GitHub Professional Certificate',
-		issuer: 'GitHub & LinkedIn',
-		date: 'August 4, 2026',
-		description:
-			'Comprehensive professional certification program validating end-to-end GitHub workflows, collaborative software engineering, repository management, and DevOps automation.',
-		skills: ['GitHub', 'Git', 'DevOps', 'Version Control'],
-		url: '/certificates/github-career-essentials.pdf',
-	},
-	{
 		title: 'Agentic AI Fundamentals: Architectures, Frameworks, and Applications',
 		issuer: 'LinkedIn Learning',
 		date: 'August 1, 2026',
@@ -481,22 +490,13 @@ export const certificates: Certificate[] = [
 		url: '/certificates/linkedin-agentic-ai-fundamentals.pdf',
 	},
 	{
-		title: 'AI Agents for Everyday Professionals: Simple Automations to Speed Up Your Work',
-		issuer: 'LinkedIn Learning',
-		date: 'July 30, 2026',
+		title: 'Career Essentials in GitHub Professional Certificate',
+		issuer: 'GitHub & LinkedIn',
+		date: 'August 4, 2026',
 		description:
-			'Practical implementation of AI agents and workflow automation to streamline repetitive tasks, process data, and accelerate engineering workflows.',
-		skills: ['AI Agents', 'Automation', 'Workflows'],
-		url: '/certificates/linkedin-ai-agents-professionals.pdf',
-	},
-	{
-		title: 'Artificial Intelligence Foundations: Machine Learning',
-		issuer: 'LinkedIn Learning',
-		date: 'August 15, 2026',
-		description:
-			'Core machine learning concepts, supervised and unsupervised learning pipelines, model training, evaluation metrics, and algorithms.',
-		skills: ['Machine Learning', 'AI Foundations', 'Algorithms'],
-		url: '/certificates/linkedin-ai-foundations-machine-learning.pdf',
+			'Comprehensive professional certification program validating end-to-end GitHub workflows, collaborative software engineering, repository management, and DevOps automation.',
+		skills: ['GitHub', 'Git', 'DevOps', 'Version Control'],
+		url: '/certificates/github-career-essentials.pdf',
 	},
 	{
 		title: 'Practical GitHub Copilot',
@@ -535,6 +535,24 @@ export const certificates: Certificate[] = [
 		url: '/certificates/linkedin-practical-github-code-search.pdf',
 	},
 	{
+		title: 'AI Agents for Everyday Professionals: Simple Automations to Speed Up Your Work',
+		issuer: 'LinkedIn Learning',
+		date: 'July 30, 2026',
+		description:
+			'Practical implementation of AI agents and workflow automation to streamline repetitive tasks, process data, and accelerate engineering workflows.',
+		skills: ['AI Agents', 'Automation', 'Workflows'],
+		url: '/certificates/linkedin-ai-agents-professionals.pdf',
+	},
+	{
+		title: 'Artificial Intelligence Foundations: Machine Learning',
+		issuer: 'LinkedIn Learning',
+		date: 'August 15, 2026',
+		description:
+			'Core machine learning concepts, supervised and unsupervised learning pipelines, model training, evaluation metrics, and algorithms.',
+		skills: ['Machine Learning', 'AI Foundations', 'Algorithms'],
+		url: '/certificates/linkedin-ai-foundations-machine-learning.pdf',
+	},
+	{
 		title: 'Python Essential Training',
 		issuer: 'LinkedIn Learning',
 		date: 'July 28, 2026',
@@ -542,24 +560,6 @@ export const certificates: Certificate[] = [
 			'Comprehensive Python programming foundations including object-oriented programming, data structures, functional constructs, and standard libraries.',
 		skills: ['Python', 'OOP', 'Data Structures'],
 		url: '/certificates/linkedin-python-essential-training.pdf',
-	},
-	{
-		title: 'Java Programming - Beginner to Master: Core Java Programming',
-		issuer: 'Udemy',
-		date: 'January 26, 2026',
-		description:
-			'Core Java programming concepts including OOP, collections framework, exception handling, multithreading, and system design.',
-		skills: ['Java', 'OOP', 'Collections', 'Multithreading'],
-		url: '/certificates/udemy-java-beginner-to-master.pdf',
-	},
-	{
-		title: 'Ultimate Web Development Course 2026 - Build Modern Websites: MERN Stack',
-		issuer: 'Udemy',
-		date: 'May 7, 2026',
-		description:
-			'Modern full-stack web development training covering React, Node.js, Express, MongoDB, REST APIs, and responsive UI design.',
-		skills: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
-		url: '/certificates/udemy-mern-stack-development.jpg',
 	},
 	{
 		title: 'Learn C and C++ (Beginner to Advance)',
@@ -716,6 +716,7 @@ export const skillCategories: SkillCategory[] = [
 		skills: [
 			{ name: 'Node.js', icon: SiNodedotjs, featured: true },
 			{ name: 'Express.js', icon: SiExpress, featured: true },
+			{ name: 'Apache Kafka', icon: Server, featured: true },
 			{ name: 'REST APIs', icon: TbApi, featured: true },
 			{ name: 'Socket.io', icon: SiSocketdotio },
 			{ name: 'Server-Sent Events (SSE)', icon: Zap },
@@ -734,6 +735,7 @@ export const skillCategories: SkillCategory[] = [
 			{ name: 'Supabase', icon: SiSupabase, featured: true },
 			{ name: 'MySQL', icon: SiMysql },
 			{ name: 'Oracle SQL', icon: FaDatabase },
+			{ name: 'H2 Database', icon: FaDatabase },
 			{ name: 'SQLite', icon: FaDatabase },
 		],
 	},
@@ -741,10 +743,14 @@ export const skillCategories: SkillCategory[] = [
 		title: 'AI & Machine Learning',
 		icon: BrainCircuit,
 		skills: [
+			{ name: 'Generative AI', icon: Sparkles, featured: true },
+			{ name: 'Agentic AI', icon: Bot, featured: true },
+			{ name: 'Claude Code', icon: Terminal, featured: true },
+			{ name: 'Claude AI', icon: Sparkles },
+			{ name: 'LLMs & Embeddings', icon: Sparkles, featured: true },
 			{ name: 'Machine Learning', icon: BrainCircuit },
 			{ name: 'Deep Learning', icon: Layers },
 			{ name: 'Computer Vision', icon: Eye },
-			{ name: 'Generative AI', icon: Sparkles, featured: true },
 			{ name: 'AI Agents', icon: Bot, featured: true },
 			{ name: 'Function Calling', icon: Workflow },
 			{ name: 'Multimodal AI', icon: Cpu },
@@ -760,6 +766,9 @@ export const skillCategories: SkillCategory[] = [
 		title: 'Cloud & DevOps',
 		icon: Cloud,
 		skills: [
+			{ name: 'GitHub Actions', icon: GitBranch, featured: true },
+			{ name: 'CI/CD Automation', icon: Workflow, featured: true },
+			{ name: 'Oracle Cloud (OCI)', icon: Cloud },
 			{ name: 'AWS', icon: FaAws, featured: true },
 			{ name: 'AWS S3', icon: FaAws },
 			{ name: 'AWS Rekognition', icon: Eye },
@@ -793,6 +802,8 @@ export const skillCategories: SkillCategory[] = [
 		skills: [
 			{ name: 'Data Structures & Algorithms', icon: GitBranch },
 			{ name: 'Object-Oriented Programming', icon: Boxes },
+			{ name: 'Multithreading & Concurrency', icon: Cpu },
+			{ name: 'Memory Management', icon: Boxes },
 			{ name: 'DBMS', icon: Database },
 			{ name: 'Operating Systems', icon: Terminal },
 			{ name: 'Computer Networks', icon: Network },
@@ -802,6 +813,10 @@ export const skillCategories: SkillCategory[] = [
 		title: 'Tools & Platforms',
 		icon: Wrench,
 		skills: [
+			{ name: 'GitHub Copilot', icon: Bot, featured: true },
+			{ name: 'GitHub Actions', icon: GitBranch },
+			{ name: 'GitHub Projects & Agile', icon: Boxes },
+			{ name: 'GitHub Code Search', icon: SiGithub },
 			{ name: 'Git', icon: GitBranch },
 			{ name: 'GitHub', icon: SiGithub },
 			{ name: 'Linux', icon: SiLinux },
@@ -846,6 +861,7 @@ export const skillGroups: SkillGroup[] = [
 		skills: [
 			'Node.js',
 			'Express.js',
+			'Apache Kafka',
 			'REST APIs',
 			'Socket.io',
 			'Server-Sent Events (SSE)',
@@ -856,15 +872,19 @@ export const skillGroups: SkillGroup[] = [
 	},
 	{
 		title: 'Databases',
-		skills: ['MongoDB', 'Mongoose', 'PostgreSQL', 'Supabase', 'MySQL', 'Oracle SQL', 'SQLite'],
+		skills: ['MongoDB', 'Mongoose', 'PostgreSQL', 'Supabase', 'MySQL', 'Oracle SQL', 'H2 Database', 'SQLite'],
 	},
 	{
 		title: 'AI & Machine Learning',
 		skills: [
+			'Generative AI',
+			'Agentic AI',
+			'Claude Code',
+			'Claude AI',
+			'LLMs & Embeddings',
 			'Machine Learning',
 			'Deep Learning',
 			'Computer Vision',
-			'Generative AI',
 			'AI Agents',
 			'Function Calling',
 			'Multimodal AI',
@@ -879,6 +899,9 @@ export const skillGroups: SkillGroup[] = [
 	{
 		title: 'Cloud & DevOps',
 		skills: [
+			'GitHub Actions',
+			'CI/CD Automation',
+			'Oracle Cloud (OCI)',
 			'AWS',
 			'AWS S3',
 			'AWS Rekognition',
@@ -910,6 +933,8 @@ export const skillGroups: SkillGroup[] = [
 		skills: [
 			'Data Structures & Algorithms',
 			'Object-Oriented Programming',
+			'Multithreading & Concurrency',
+			'Memory Management',
 			'DBMS',
 			'Operating Systems',
 			'Computer Networks',
@@ -917,7 +942,7 @@ export const skillGroups: SkillGroup[] = [
 	},
 	{
 		title: 'Tools & Platforms',
-		skills: ['Git', 'GitHub', 'Linux', 'VS Code', 'Postman', 'npm', 'Vercel'],
+		skills: ['GitHub Copilot', 'GitHub Actions', 'GitHub Projects', 'GitHub Code Search', 'Git', 'GitHub', 'Linux', 'VS Code', 'Postman', 'npm', 'Vercel'],
 	},
 ];
 

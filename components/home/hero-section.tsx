@@ -110,7 +110,7 @@ export function HeroSection() {
 						variants={fadeIn('up', 0.2)}
 						className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight"
 					>
-						<span className="text-gradient">Sreevanth Chowdhary Vadlamudi</span>
+						<span className="text-gradient">Vadlamudi Sreevanth Chowdhary</span>
 					</motion.h1>
 
 					<motion.div

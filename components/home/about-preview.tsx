@@ -63,7 +63,7 @@ export function AboutPreview() {
 
 								<Image
 									src="/sreevanth.jpeg"
-									alt="Sreevanth Chowdhary Vadlamudi"
+									alt="Vadlamudi Sreevanth Chowdhary"
 									fill
 									priority
 									className="object-cover"
@@ -91,7 +91,7 @@ export function AboutPreview() {
 							</h3>
 
 							<p className="text-lg leading-8 text-zinc-400">
-								I&apos;m Sreevanth Chowdhary Vadlamudi, a Computer Science graduate from Amrita Vishwa Vidyapeetham, Bengaluru. I have hands-on experience with Java, MERN stack development, REST APIs, data structures, backend systems, and full-stack application development. I enjoy building practical applications, working with different technologies, and solving problems through clean and efficient code.
+								I&apos;m Vadlamudi Sreevanth Chowdhary, a Computer Science graduate from Amrita Vishwa Vidyapeetham, Bengaluru. I have hands-on experience with Java, MERN stack development, REST APIs, data structures, backend systems, and full-stack application development. I enjoy building practical applications, working with different technologies, and solving problems through clean and efficient code.
 							</p>
 
 						</div>

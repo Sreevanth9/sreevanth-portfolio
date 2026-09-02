@@ -6,6 +6,7 @@ interface SectionHeaderProps {
 	description?: string;
 	className?: string;
 	children?: ReactNode;
+	isH2?: boolean;
 }
 
 export function SectionHeader({
@@ -13,11 +14,23 @@ export function SectionHeader({
 	description,
 	className,
 	children,
+	isH2 = false,
 }: SectionHeaderProps) {
+	const HeadingTag = isH2 ? 'h2' : 'h1';
+
 	return (
-		<div className={cn('space-y-2', className)}>
-			<h2 className="section-title">{title}</h2>
-			{description && <p className="text-muted-foreground max-w-2xl">{description}</p>}
+		<div className={cn('mb-12 max-w-3xl', className)}>
+			<div className="inline-block">
+				<HeadingTag className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white">
+					{title}
+				</HeadingTag>
+				<div className="h-1 w-20 bg-primary mt-3 rounded-full" />
+			</div>
+			{description && (
+				<p className="text-muted-foreground text-base sm:text-lg leading-relaxed mt-4">
+					{description}
+				</p>
+			)}
 			{children}
 		</div>
 	);

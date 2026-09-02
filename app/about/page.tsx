@@ -92,7 +92,7 @@ export default function AboutPage() {
             </p>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.15] mb-4 sm:mb-6">
-              Sreevanth Chowdhary Vadlamudi
+              Vadlamudi Sreevanth Chowdhary
             </h1>
 
             <p className="text-lg sm:text-xl text-zinc-300 mb-6 sm:mb-8 font-medium">
@@ -101,7 +101,7 @@ export default function AboutPage() {
 
             <div className="space-y-4 max-w-2xl mb-8 sm:mb-10 text-zinc-300 text-base sm:text-lg leading-relaxed">
               <p>
-                I&apos;m Sreevanth Chowdhary Vadlamudi, a Computer Science graduate from Amrita Vishwa Vidyapeetham, Bengaluru. I have hands-on experience with Java, MERN stack development, REST APIs, data structures, backend systems, and full-stack application development.
+                I&apos;m Vadlamudi Sreevanth Chowdhary, a Computer Science graduate from Amrita Vishwa Vidyapeetham, Bengaluru. I have hands-on experience with Java, MERN stack development, REST APIs, data structures, backend systems, and full-stack application development.
               </p>
               <p>
                 I enjoy building practical applications, solving technical problems, and learning through hands-on projects. My work has involved backend development, databases, APIs, AI-powered applications, and different areas of full-stack development, with a focus on writing clean and maintainable code.
@@ -160,7 +160,7 @@ export default function AboutPage() {
 
               <Image
                 src="/sreevanth.jpeg"
-                alt="Sreevanth Chowdhary Vadlamudi"
+                alt="Vadlamudi Sreevanth Chowdhary"
                 width={430}
                 height={430}
                 priority

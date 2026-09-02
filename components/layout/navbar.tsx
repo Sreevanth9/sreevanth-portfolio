@@ -69,7 +69,7 @@ export function Navbar() {
 					{/* LEFT */}
 					<div className="flex items-center gap-10">
 
-						<Link href="/" className="flex items-center" aria-label="Sreevanth Chowdhary Vadlamudi Home">
+						<Link href="/" className="flex items-center" aria-label="Vadlamudi Sreevanth Chowdhary Home">
 							<motion.div
 								whileHover={{ scale: 1.03 }}
 								className="
@@ -161,7 +161,7 @@ export function Navbar() {
 											setIsOpen(false);
 											router.push('/');
 										}}
-										aria-label="Sreevanth Chowdhary Vadlamudi Home"
+										aria-label="Vadlamudi Sreevanth Chowdhary Home"
 										className="
 											text-2xl sm:text-3xl
 											font-extrabold

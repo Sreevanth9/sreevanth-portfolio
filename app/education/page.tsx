@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Calendar, MapPin } from 'lucide-react';
 
 import { Card, CardContent } from '@/components/ui/card';
+import { SectionHeader } from '@/components/ui/section-header';
 import { education } from '@/lib/constants';
 import { fadeIn, staggerContainer } from '@/lib/motion';
 
@@ -17,20 +18,10 @@ export default function EducationPage() {
 					animate="show"
 					className="max-w-3xl mx-auto"
 				>
-					<motion.h1
-						variants={fadeIn('down', 0.2)}
-						className="text-4xl font-bold mb-6"
-					>
-						Education
-					</motion.h1>
-
-					<motion.p
-						variants={fadeIn('down', 0.3)}
-						className="text-lg text-muted-foreground mb-12"
-					>
-						My academic journey and foundation in computer science,
-						software engineering, and analytical problem solving.
-					</motion.p>
+					<SectionHeader
+						title="Education"
+						description="My academic journey and foundation in computer science, software engineering, and analytical problem solving."
+					/>
 
 					<div className="space-y-8">
 						{education.map((edu, index) => (

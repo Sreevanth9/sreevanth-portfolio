@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Sreevanth Chowdhary Vadlamudi | Experience',
+	title: 'Vadlamudi Sreevanth Chowdhary | Experience',
 	description:
-		'Professional internship and engineering experience of Sreevanth Chowdhary Vadlamudi, including India Space Lab research internship and software development projects.',
+		'Professional internship and engineering experience of Vadlamudi Sreevanth Chowdhary, including India Space Lab research internship and software development projects.',
 	alternates: {
 		canonical: 'https://sreevanth-portfolio.vercel.app/experience',
 	},
 	openGraph: {
-		title: 'Sreevanth Chowdhary Vadlamudi | Experience',
+		title: 'Vadlamudi Sreevanth Chowdhary | Experience',
 		description:
-			'Professional internship and engineering experience of Sreevanth Chowdhary Vadlamudi.',
+			'Professional internship and engineering experience of Vadlamudi Sreevanth Chowdhary.',
 		url: 'https://sreevanth-portfolio.vercel.app/experience',
 	},
 };
