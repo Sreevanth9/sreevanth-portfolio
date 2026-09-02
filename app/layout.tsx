@@ -11,18 +11,18 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sreevanth-portfolio
 export const metadata: Metadata = {
 	metadataBase: new URL(siteUrl),
 	title: {
-		default: 'Sreevanth Vadlamudi Chowdhary | Personal Portfolio',
+		default: 'Sreevanth Chowdhary Vadlamudi | Personal Portfolio',
 		template: '%s',
 	},
 	description:
-		'Personal portfolio website of Sreevanth Vadlamudi Chowdhary (also known as Sreevanth Chowdhary Vadlamudi, Sreevanth Vadlamudi, and Sreevanth Chowdhary) — Software Engineer and Full-Stack Developer building scalable web applications, REST APIs, and AI-integrated systems.',
+		'Personal portfolio website of Sreevanth Chowdhary Vadlamudi (also known as Sreevanth Vadlamudi Chowdhary, Sreevanth Vadlamudi, and Sreevanth Chowdhary) — Software Engineer and Full-Stack Developer building scalable web applications, REST APIs, and AI-integrated systems.',
 	keywords: [
+		'Sreevanth Chowdhary Vadlamudi',
 		'Sreevanth Vadlamudi Chowdhary',
 		'Sreevanth Vadlamudi',
 		'Sreevanth Chowdhary',
 		'Vadlamudi Sreevanth',
 		'Vadlamudi Sreevanth Chowdhary',
-		'Sreevanth Chowdhary Vadlamudi',
 		'Sreevanth V',
 		'Sreevanth V.',
 		'V Sreevanth',
@@ -33,11 +33,11 @@ export const metadata: Metadata = {
 		'V. Sreevanth Chowdhary',
 		'Sreevanth',
 		'Sreevanth Portfolio',
-		'Sreevanth Vadlamudi Portfolio',
+		'Sreevanth Chowdhary Vadlamudi Portfolio',
 	],
-	authors: [{ name: 'Sreevanth Vadlamudi Chowdhary', url: 'https://github.com/Sreevanth9' }],
-	creator: 'Sreevanth Vadlamudi Chowdhary',
-	publisher: 'Sreevanth Vadlamudi Chowdhary',
+	authors: [{ name: 'Sreevanth Chowdhary Vadlamudi', url: 'https://github.com/Sreevanth9' }],
+	creator: 'Sreevanth Chowdhary Vadlamudi',
+	publisher: 'Sreevanth Chowdhary Vadlamudi',
 	alternates: {
 		canonical: 'https://sreevanth-portfolio.vercel.app/',
 	},
@@ -59,24 +59,24 @@ export const metadata: Metadata = {
 		type: 'website',
 		locale: 'en_US',
 		url: siteUrl,
-		title: 'Sreevanth Vadlamudi Chowdhary | Personal Portfolio',
+		title: 'Sreevanth Chowdhary Vadlamudi | Personal Portfolio',
 		description:
-			'Personal portfolio website of Sreevanth Vadlamudi Chowdhary — Software Engineer and Full-Stack Developer building scalable web applications, REST APIs, and AI-integrated systems.',
-		siteName: 'Sreevanth Vadlamudi Chowdhary Portfolio',
+			'Personal portfolio website of Sreevanth Chowdhary Vadlamudi — Software Engineer and Full-Stack Developer building scalable web applications, REST APIs, and AI-integrated systems.',
+		siteName: 'Sreevanth Chowdhary Vadlamudi Portfolio',
 		images: [
 			{
 				url: '/sreevanth.jpeg',
 				width: 800,
 				height: 800,
-				alt: 'Sreevanth Vadlamudi Chowdhary',
+				alt: 'Sreevanth Chowdhary Vadlamudi',
 			},
 		],
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Sreevanth Vadlamudi Chowdhary | Personal Portfolio',
+		title: 'Sreevanth Chowdhary Vadlamudi | Personal Portfolio',
 		description:
-			'Personal portfolio of Sreevanth Vadlamudi Chowdhary — Software Engineer and Full-Stack Developer.',
+			'Personal portfolio of Sreevanth Chowdhary Vadlamudi — Software Engineer and Full-Stack Developer.',
 		images: ['/sreevanth.jpeg'],
 	},
 	icons: {
@@ -89,15 +89,15 @@ export const metadata: Metadata = {
 const jsonLd = {
 	'@context': 'https://schema.org',
 	'@type': 'Person',
-	name: 'Sreevanth Vadlamudi Chowdhary',
+	name: 'Sreevanth Chowdhary Vadlamudi',
 	alternateName: [
+		'Sreevanth Vadlamudi Chowdhary',
 		'Sreevanth Vadlamudi',
 		'Sreevanth Chowdhary',
 		'Vadlamudi Sreevanth',
 		'Sreevanth V. Chowdhary',
 		'V Sreevanth Chowdhary',
 		'Vadlamudi Sreevanth Chowdhary',
-		'Sreevanth Chowdhary Vadlamudi',
 		'Sreevanth V',
 		'Sreevanth V.',
 		'V Sreevanth',

@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Sreevanth Vadlamudi Chowdhary | Education',
+	title: 'Sreevanth Chowdhary Vadlamudi | Education',
 	description:
-		'Academic background and degree education of Sreevanth Vadlamudi Chowdhary at Amrita Vishwa Vidyapeetham, Bengaluru.',
+		'Academic background and degree education of Sreevanth Chowdhary Vadlamudi at Amrita Vishwa Vidyapeetham, Bengaluru.',
 	alternates: {
 		canonical: 'https://sreevanth-portfolio.vercel.app/education',
 	},
 	openGraph: {
-		title: 'Sreevanth Vadlamudi Chowdhary | Education',
+		title: 'Sreevanth Chowdhary Vadlamudi | Education',
 		description:
-			'Academic background and education details of Sreevanth Vadlamudi Chowdhary.',
+			'Academic background and education details of Sreevanth Chowdhary Vadlamudi.',
 		url: 'https://sreevanth-portfolio.vercel.app/education',
 	},
 };

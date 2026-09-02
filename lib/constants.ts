@@ -1,7 +1,7 @@
 export const siteConfig = {
-	name: 'Sreevanth Vadlamudi Chowdhary',
+	name: 'Sreevanth Chowdhary Vadlamudi',
 	description:
-		'Personal portfolio of Sreevanth Vadlamudi Chowdhary — Software engineer building scalable web applications, REST APIs, AI-assisted systems, and modern full-stack platforms.',
+		'Personal portfolio of Sreevanth Chowdhary Vadlamudi — Software engineer building scalable web applications, REST APIs, AI-assisted systems, and modern full-stack platforms.',
 	mainNav: [
 		{
 			title: 'Home',
@@ -182,7 +182,7 @@ export const projects: Project[] = [
 		image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1200&auto=format&fit=crop',
 		tags: ['React.js', 'Node.js', 'Express.js', 'AWS S3', 'AWS App Runner', 'Supabase', 'Groq AI'],
 		link: 'https://intellifarm-ai.vercel.app',
-		linkText: 'Visit Platform',
+		linkText: 'Visit Project',
 		repo: 'https://github.com/Sreevanth9/IntelliFarm-AI',
 	},
 	{
@@ -192,7 +192,7 @@ export const projects: Project[] = [
 		image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200&auto=format&fit=crop',
 		tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Chatbot AI'],
 		link: 'https://dentiginee.lovable.app',
-		linkText: 'Visit Platform',
+		linkText: 'Visit Project',
 		repo: 'https://github.com/Sreevanth9/dentiginee',
 	},
 	{

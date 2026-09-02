@@ -1,41 +1,30 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-
 import Link from 'next/link';
-
-import { usePathname } from 'next/navigation';
-
+import { usePathname, useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
-
-import {
-	Menu,
-	ChevronDown,
-} from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 import { siteConfig } from '@/lib/constants';
-
 import { Button } from '@/components/ui/button';
-
 import { SearchCommand } from '@/components/layout/search-command';
-
 import {
 	Sheet,
 	SheetContent,
 	SheetTrigger,
 } from '@/components/ui/sheet';
 
-import {
-	DropdownMenu,
-	DropdownMenuContent,
-	DropdownMenuItem,
-	DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
-
 export function Navbar() {
 	const [isScrolled, setIsScrolled] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
 
 	const pathname = usePathname();
+	const router = useRouter();
+
+	useEffect(() => {
+		setIsOpen(false);
+	}, [pathname]);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -61,7 +50,6 @@ export function Navbar() {
 				pt-4
 			"
 		>
-
 			<div
 				className={`
 					w-[95%]
@@ -71,25 +59,21 @@ export function Navbar() {
 					border border-white/10
 					backdrop-blur-2xl
 					transition-all duration-300
-
 					${isScrolled
 						? 'bg-[#081120]/85 shadow-2xl'
 						: 'bg-[#081120]/60'}
 				`}
 			>
-
-				<div className="flex h-full items-center justify-between px-6">
+				<div className="flex h-full items-center justify-between px-4 sm:px-6">
 
 					{/* LEFT */}
-
 					<div className="flex items-center gap-10">
 
-						<Link href="/" className="flex items-center" aria-label="Sreevanth Vadlamudi Chowdhary Home">
-
+						<Link href="/" className="flex items-center" aria-label="Sreevanth Chowdhary Vadlamudi Home">
 							<motion.div
 								whileHover={{ scale: 1.03 }}
 								className="
-									text-3xl
+									text-2xl sm:text-3xl
 									font-extrabold
 									tracking-tight
 									bg-gradient-to-r
@@ -102,15 +86,11 @@ export function Navbar() {
 							>
 								Portfolio
 							</motion.div>
-
 						</Link>
 
 						{/* DESKTOP NAV */}
-
 						<nav className="hidden lg:flex items-center gap-7">
-
 							{siteConfig.mainNav.map((item) => (
-
 								<Link
 									key={item.href}
 									href={item.href}
@@ -119,13 +99,11 @@ export function Navbar() {
 										text-sm
 										font-medium
 										transition-all duration-300
-
 										${pathname === item.href
 											? 'text-primary'
 											: 'text-zinc-400 hover:text-white'}
 									`}
 								>
-
 									{item.title}
 
 									{pathname === item.href && (
@@ -141,39 +119,29 @@ export function Navbar() {
 											"
 										/>
 									)}
-
 								</Link>
-
 							))}
-
 						</nav>
 
 					</div>
 
 					{/* RIGHT */}
-
-					<div className="hidden md:flex items-center">
-
+					<div className="hidden lg:flex items-center">
 						<SearchCommand />
-
 					</div>
 
 					{/* MOBILE MENU */}
-
-					<div className="md:hidden">
-
-						<Sheet>
-
+					<div className="lg:hidden flex items-center">
+						<Sheet open={isOpen} onOpenChange={setIsOpen}>
 							<SheetTrigger asChild>
-
 								<Button
 									variant="ghost"
 									size="icon"
-									className="text-white"
+									className="text-white hover:bg-white/10"
+									aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
 								>
-									<Menu className="h-5 w-5" />
+									{isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
 								</Button>
-
 							</SheetTrigger>
 
 							<SheetContent
@@ -181,16 +149,21 @@ export function Navbar() {
 									border-white/10
 									bg-[#081120]
 									backdrop-blur-2xl
+									w-[85vw] max-w-sm
+									p-6
 								"
 							>
-
-								<div className="mt-10 flex flex-col gap-8">
-
+								<div className="mt-8 flex flex-col gap-8">
 									<Link
 										href="/"
-										aria-label="Sreevanth Vadlamudi Chowdhary Home"
+										onClick={(e) => {
+											e.preventDefault();
+											setIsOpen(false);
+											router.push('/');
+										}}
+										aria-label="Sreevanth Chowdhary Vadlamudi Home"
 										className="
-											text-3xl
+											text-2xl sm:text-3xl
 											font-extrabold
 											tracking-tight
 											bg-gradient-to-r
@@ -204,113 +177,38 @@ export function Navbar() {
 										Portfolio
 									</Link>
 
-									<nav className="flex flex-col gap-5">
-
+									<nav className="flex flex-col gap-2">
 										{siteConfig.mainNav.map((item) => (
-
 											<Link
 												key={item.href}
 												href={item.href}
+												onClick={(e) => {
+													e.preventDefault();
+													setIsOpen(false);
+													router.push(item.href);
+												}}
 												className={`
 													text-base
 													font-medium
 													transition-colors
-
+													py-2.5 px-3.5
+													rounded-xl
 													${pathname === item.href
-														? 'text-primary'
-														: 'text-zinc-400'}
+														? 'text-primary bg-primary/10 font-semibold'
+														: 'text-zinc-300 hover:text-white hover:bg-white/5'}
 												`}
 											>
 												{item.title}
 											</Link>
-
 										))}
-
 									</nav>
-
-									<div className="pt-4">
-
-										<DropdownMenu>
-
-											<DropdownMenuTrigger asChild>
-
-												<Button
-													variant="outline"
-													className="
-														w-full
-														justify-between
-														border-white/10
-														bg-white/[0.03]
-													"
-												>
-													Social Links
-
-													<ChevronDown className="ml-2 h-4 w-4" />
-
-												</Button>
-
-											</DropdownMenuTrigger>
-
-											<DropdownMenuContent
-												align="end"
-												className="
-													border-white/10
-													bg-[#081120]
-													text-white
-												"
-											>
-
-												<DropdownMenuItem asChild>
-
-													<Link
-														href={siteConfig.links.github}
-														target="_blank"
-													>
-														GitHub
-													</Link>
-
-												</DropdownMenuItem>
-
-												<DropdownMenuItem asChild>
-
-													<Link
-														href={siteConfig.links.linkedin}
-														target="_blank"
-													>
-														LinkedIn
-													</Link>
-
-												</DropdownMenuItem>
-
-												<DropdownMenuItem asChild>
-
-													<Link
-														href={siteConfig.links.leetcode}
-														target="_blank"
-													>
-														LeetCode
-													</Link>
-
-												</DropdownMenuItem>
-
-											</DropdownMenuContent>
-
-										</DropdownMenu>
-
-									</div>
-
 								</div>
-
 							</SheetContent>
-
 						</Sheet>
-
 					</div>
 
 				</div>
-
 			</div>
-
 		</motion.header>
 	);
 }

@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Sreevanth Vadlamudi Chowdhary | Certificates',
+	title: 'Sreevanth Chowdhary Vadlamudi | Certificates',
 	description:
-		'Verified technical certifications and engineering credentials earned by Sreevanth Vadlamudi Chowdhary.',
+		'Verified technical certifications and engineering credentials earned by Sreevanth Chowdhary Vadlamudi.',
 	alternates: {
 		canonical: 'https://sreevanth-portfolio.vercel.app/certificates',
 	},
 	openGraph: {
-		title: 'Sreevanth Vadlamudi Chowdhary | Certificates',
+		title: 'Sreevanth Chowdhary Vadlamudi | Certificates',
 		description:
-			'Verified technical certifications and credentials of Sreevanth Vadlamudi Chowdhary.',
+			'Verified technical certifications and credentials of Sreevanth Chowdhary Vadlamudi.',
 		url: 'https://sreevanth-portfolio.vercel.app/certificates',
 	},
 };

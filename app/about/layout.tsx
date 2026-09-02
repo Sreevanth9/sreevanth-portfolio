@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'About Sreevanth Vadlamudi Chowdhary',
+	title: 'About Sreevanth Chowdhary Vadlamudi',
 	description:
-		'Learn more about Sreevanth Vadlamudi Chowdhary (also known as Sreevanth Vadlamudi and Sreevanth Chowdhary), a software engineer and computer science undergraduate.',
+		'Learn more about Sreevanth Chowdhary Vadlamudi (also known as Sreevanth Vadlamudi and Sreevanth Chowdhary), a software engineer and computer science undergraduate.',
 	alternates: {
 		canonical: 'https://sreevanth-portfolio.vercel.app/about',
 	},
 	openGraph: {
-		title: 'About Sreevanth Vadlamudi Chowdhary',
+		title: 'About Sreevanth Chowdhary Vadlamudi',
 		description:
-			'Background, education, and technical journey of Sreevanth Vadlamudi Chowdhary.',
+			'Background, education, and technical journey of Sreevanth Chowdhary Vadlamudi.',
 		url: 'https://sreevanth-portfolio.vercel.app/about',
 	},
 };

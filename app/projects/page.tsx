@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Github, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -58,8 +58,8 @@ export default function ProjectsPage() {
 											))}
 										</div>
 									</CardContent>
-									<CardFooter className="p-6 pt-0 gap-3 relative z-10">
-										{project.link && (
+									{project.link && (
+										<CardFooter className="p-6 pt-0 relative z-10">
 											<Button size="sm" asChild className="relative z-10 bg-primary hover:bg-primary/90 text-primary-foreground shadow-md shadow-primary/20">
 												<a
 													href={project.link}
@@ -67,23 +67,11 @@ export default function ProjectsPage() {
 													rel="noopener noreferrer"
 												>
 													<ExternalLink className="h-4 w-4 mr-2" />
-													{project.linkText || 'Visit Platform'}
+													{project.linkText || 'Visit Project'}
 												</a>
 											</Button>
-										)}
-										{project.repo && (
-											<Button size="sm" variant={project.link ? "outline" : "default"} asChild className="relative z-10">
-												<a
-													href={project.repo}
-													target="_blank"
-													rel="noopener noreferrer"
-												>
-													<Github className="h-4 w-4 mr-2" />
-													GitHub
-												</a>
-											</Button>
-										)}
-									</CardFooter>
+										</CardFooter>
+									)}
 								</Card>
 							</motion.div>
 						))}

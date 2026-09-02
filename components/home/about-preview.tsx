@@ -44,29 +44,31 @@ export function AboutPreview() {
 						className="flex justify-center"
 					>
 
-						<div
-							className="
-								relative
-								w-[340px]
-								h-[340px]
-								md:w-[420px]
-								md:h-[420px]
-								rounded-full
-								overflow-hidden
-								border border-white/10
-								shadow-[0_0_60px_rgba(45,212,191,0.12)]
-								bg-[#081120]
-							"
-						>
+							<div
+								className="
+									relative
+									w-[270px]
+									h-[270px]
+									sm:w-[340px]
+									sm:h-[340px]
+									md:w-[420px]
+									md:h-[420px]
+									rounded-full
+									overflow-hidden
+									border border-white/10
+									shadow-[0_0_60px_rgba(45,212,191,0.12)]
+									bg-[#081120]
+								"
+							>
 
-							<Image
-								src="/sreevanth.jpeg"
-								alt="Sreevanth Vadlamudi Chowdhary"
-								fill
-								priority
-								className="object-cover"
-								sizes="(max-width:768px) 100vw, 420px"
-							/>
+								<Image
+									src="/sreevanth.jpeg"
+									alt="Sreevanth Chowdhary Vadlamudi"
+									fill
+									priority
+									className="object-cover"
+									sizes="(max-width:768px) 100vw, 420px"
+								/>
 
 						</div>
 

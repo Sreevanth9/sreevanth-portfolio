@@ -7,7 +7,6 @@ import { motion } from 'framer-motion';
 
 import {
 	ArrowRight,
-	Github,
 	ExternalLink,
 } from 'lucide-react';
 
@@ -165,9 +164,9 @@ export function ProjectsPreview() {
 
 									{/* BUTTONS */}
 
-									<div className="flex items-center gap-3">
+									{project.link && (
 
-										{project.link && (
+										<div className="flex items-center gap-3">
 
 											<Button
 												size="sm"
@@ -176,6 +175,10 @@ export function ProjectsPreview() {
 													rounded-xl
 													h-11
 													px-5
+													bg-primary
+													text-primary-foreground
+													hover:opacity-90
+													shadow-md shadow-primary/20
 												"
 											>
 
@@ -187,47 +190,15 @@ export function ProjectsPreview() {
 
 													<ExternalLink className="h-4 w-4 mr-2" />
 
-													{project.linkText || 'Visit Platform'}
+													{project.linkText || 'Visit Project'}
 
 												</a>
 
 											</Button>
 
-										)}
+										</div>
 
-										{project.repo && (
-
-											<Button
-												size="sm"
-												variant="outline"
-												asChild
-												className="
-													rounded-xl
-													h-11
-													px-5
-													border-white/10
-													bg-white/[0.03]
-													hover:bg-white/[0.06]
-												"
-											>
-
-												<a
-													href={project.repo}
-													target="_blank"
-													rel="noopener noreferrer"
-												>
-
-													<Github className="h-4 w-4 mr-2" />
-
-													GitHub
-
-												</a>
-
-											</Button>
-
-										)}
-
-									</div>
+									)}
 
 								</div>
 
