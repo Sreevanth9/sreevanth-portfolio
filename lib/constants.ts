@@ -313,6 +313,8 @@ export const selectedProjects: Project[] = [
 		image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop',
 		tags: ['React.js', 'Three.js', 'Leaflet.js', 'Chart.js', 'Telemetry', 'JavaScript'],
 		repo: 'https://github.com/Sreevanth9/cansat-gcs',
+		reportUrl: '/CanSat_Project_Report.pdf',
+		reportText: 'View Report',
 	},
 	{
 		title: 'SecureVoIP Cryptographic Communication',
@@ -432,86 +434,160 @@ export type Certificate = {
 	url?: string;
 };
 
-export const certificates = [
-  {
-    title: 'Ultimate Web Development Course 2026 - Build Modern Websites: MERN Stack',
-    issuer: 'Udemy',
-    date: 'May 7, 2026',
-    description:
-      'Comprehensive modern web development training focused on React, Node.js, Express, MongoDB, and responsive UI design.',
-    skills: ['React', 'Node.js', 'MongoDB'],
-    url: 'https://www.udemy.com/certificate/UC-f26960a8-d17d-49f3-a3bc-3ef18485eeb4/',
-  },
-
-  {
-    title: 'Java Programming - Beginner to Master: Core Java Programming',
-    issuer: 'Udemy',
-    date: 'January 26, 2026',
-    description:
-      'Core Java programming concepts including OOP, collections, exception handling, and multithreading.',
-    skills: ['Java', 'OOP', 'Collections'],
-    url: 'https://www.udemy.com/certificate/UC-390e0554-30a9-434f-9650-9a95aca0aae6/',
-  },
-
-  {
-    title: 'Claude Code 101',
-    issuer: 'Anthropic',
-    date: 'May 5, 2026',
-    description:
-      'AI-assisted development workflow training focused on Claude Code tooling, prompt engineering, productivity workflows, and developer acceleration.',
-    skills: ['Claude Code', 'AI Workflow', 'Prompt Engineering'],
-    url: 'https://verify.skilljar.com/c/9jdfmfng49cb',
-  },
-
-  {
-    title: 'Claude 101',
-    issuer: 'Anthropic',
-    date: 'May 5, 2026',
-    description:
-      'Fundamentals of Claude AI workflows, prompting techniques, AI-assisted productivity, and practical LLM usage concepts.',
-    skills: ['Claude AI', 'LLMs', 'AI Productivity'],
-    url: 'https://verify.skilljar.com/c/w7omwfd3822m',
-  },
-
-  {
-    title: 'Oracle OCI Generative AI Professional: Generative AI and LLM Concepts',
-    issuer: 'Oracle',
-    date: 'September 26, 2025',
-    description:
-      'Professional certification covering Generative AI fundamentals, LLM concepts, embeddings, and AI applications.',
-    skills: ['Generative AI', 'LLMs', 'OCI'],
-    url: 'https://drive.google.com/file/d/1xMumP7pXY1s1g6yy3toL3EDGl1nx06Qu/view',
-  },
-
-  {
-    title: 'Deloitte Data Analytics Virtual Experience: Data Analysis and Visualization',
-    issuer: 'Deloitte',
-    date: 'August 25, 2025',
-    description:
-      'Hands-on analytics experience involving data cleaning, dashboard creation, business insights, and visualization.',
-    skills: ['Data Analytics', 'Visualization', 'Power BI'],
-    url: 'https://drive.google.com/file/d/1iTNLDvMYKbAt5burZ24Ds97m2M_NWPd-/view',
-  },
-
-  {
-    title: 'C and C++ (Beginner to Advanced): Problem Solving and Programming Fundamentals',
-    issuer: 'Udemy',
-    date: 'October 3, 2023',
-    description:
-      'Programming fundamentals and problem-solving techniques using C and C++ with practical coding exercises.',
-    skills: ['C', 'C++', 'Problem Solving'],
-    url: 'https://www.udemy.com/certificate/UC-2f15b32d-955e-477a-8c20-e3fe1a0236a5/',
-  },
-
-  {
-    title: 'Software Engineering Job Simulation',
-    issuer: 'J.P. Morgan Chase & Co. / Forage',
-    date: 'August 25, 2025',
-    description:
-      'Completed practical software engineering simulation tasks including Kafka integration, REST API integration, H2 database integration, and backend project setup.',
-    skills: ['Kafka', 'REST API', 'Backend Development', 'Java'],
-    url: 'https://drive.google.com/file/d/1g68vkhbOYO8zHvvCZ40Jv_CH4qMCE1ny/view?usp=sharing',
-  },
+export const certificates: Certificate[] = [
+	{
+		title: 'Oracle Cloud Infrastructure 2025 Certified Generative AI Professional',
+		issuer: 'Oracle',
+		date: 'September 16, 2025',
+		description:
+			'Professional certification covering Generative AI fundamentals, LLM concepts, embeddings, OCI generative AI services, and enterprise AI architectures.',
+		skills: ['Generative AI', 'LLMs', 'Oracle OCI', 'Embeddings'],
+		url: '/certificates/oracle-generative-ai-professional.pdf',
+	},
+	{
+		title: 'Claude Code 101',
+		issuer: 'Anthropic',
+		date: 'May 5, 2026',
+		description:
+			'AI-assisted development workflow training focused on Claude Code tooling, prompt engineering, productivity workflows, and developer acceleration.',
+		skills: ['Claude Code', 'AI Workflow', 'Prompt Engineering'],
+		url: '/certificates/claude-code-101.pdf',
+	},
+	{
+		title: 'Claude 101',
+		issuer: 'Anthropic',
+		date: 'May 5, 2026',
+		description:
+			'Fundamentals of Claude AI workflows, prompting techniques, AI-assisted productivity, and practical LLM usage concepts.',
+		skills: ['Claude AI', 'LLMs', 'Prompting'],
+		url: '/certificates/claude-101.pdf',
+	},
+	{
+		title: 'Career Essentials in GitHub Professional Certificate',
+		issuer: 'GitHub & LinkedIn',
+		date: 'August 4, 2026',
+		description:
+			'Comprehensive professional certification program validating end-to-end GitHub workflows, collaborative software engineering, repository management, and DevOps automation.',
+		skills: ['GitHub', 'Git', 'DevOps', 'Version Control'],
+		url: '/certificates/github-career-essentials.pdf',
+	},
+	{
+		title: 'Agentic AI Fundamentals: Architectures, Frameworks, and Applications',
+		issuer: 'LinkedIn Learning',
+		date: 'August 1, 2026',
+		description:
+			'In-depth training covering autonomous AI agents, multi-agent frameworks, tool usage patterns, reasoning loops, and production AI architectures.',
+		skills: ['Agentic AI', 'AI Agents', 'Autonomous Systems'],
+		url: '/certificates/linkedin-agentic-ai-fundamentals.pdf',
+	},
+	{
+		title: 'AI Agents for Everyday Professionals: Simple Automations to Speed Up Your Work',
+		issuer: 'LinkedIn Learning',
+		date: 'July 30, 2026',
+		description:
+			'Practical implementation of AI agents and workflow automation to streamline repetitive tasks, process data, and accelerate engineering workflows.',
+		skills: ['AI Agents', 'Automation', 'Workflows'],
+		url: '/certificates/linkedin-ai-agents-professionals.pdf',
+	},
+	{
+		title: 'Artificial Intelligence Foundations: Machine Learning',
+		issuer: 'LinkedIn Learning',
+		date: 'August 15, 2026',
+		description:
+			'Core machine learning concepts, supervised and unsupervised learning pipelines, model training, evaluation metrics, and algorithms.',
+		skills: ['Machine Learning', 'AI Foundations', 'Algorithms'],
+		url: '/certificates/linkedin-ai-foundations-machine-learning.pdf',
+	},
+	{
+		title: 'Practical GitHub Copilot',
+		issuer: 'LinkedIn Learning',
+		date: 'August 4, 2026',
+		description:
+			'Hands-on AI pair programming with GitHub Copilot covering code generation, test authoring, prompt engineering, and code refactoring.',
+		skills: ['GitHub Copilot', 'AI Pair Programming', 'Productivity'],
+		url: '/certificates/linkedin-practical-github-copilot.pdf',
+	},
+	{
+		title: 'Practical GitHub Actions',
+		issuer: 'LinkedIn Learning',
+		date: 'July 17, 2026',
+		description:
+			'CI/CD automation using GitHub Actions including workflow orchestration, custom triggers, environment secrets, matrix builds, and deployment pipelines.',
+		skills: ['GitHub Actions', 'CI/CD', 'Automation'],
+		url: '/certificates/linkedin-practical-github-actions.pdf',
+	},
+	{
+		title: 'Practical GitHub Project Management and Collaboration',
+		issuer: 'LinkedIn Learning',
+		date: 'August 3, 2026',
+		description:
+			'Agile project planning, GitHub Issues, Projects boards, pull request workflows, code review best practices, and team collaboration.',
+		skills: ['Project Management', 'GitHub Projects', 'Collaboration'],
+		url: '/certificates/linkedin-practical-github-project-management.pdf',
+	},
+	{
+		title: 'Practical GitHub Code Search',
+		issuer: 'LinkedIn Learning',
+		date: 'August 4, 2026',
+		description:
+			'Advanced code navigation, regex-based code search, semantic indexing, and architectural code exploration across large repositories.',
+		skills: ['Code Search', 'Repository Navigation', 'GitHub'],
+		url: '/certificates/linkedin-practical-github-code-search.pdf',
+	},
+	{
+		title: 'Python Essential Training',
+		issuer: 'LinkedIn Learning',
+		date: 'July 28, 2026',
+		description:
+			'Comprehensive Python programming foundations including object-oriented programming, data structures, functional constructs, and standard libraries.',
+		skills: ['Python', 'OOP', 'Data Structures'],
+		url: '/certificates/linkedin-python-essential-training.pdf',
+	},
+	{
+		title: 'Java Programming - Beginner to Master: Core Java Programming',
+		issuer: 'Udemy',
+		date: 'January 26, 2026',
+		description:
+			'Core Java programming concepts including OOP, collections framework, exception handling, multithreading, and system design.',
+		skills: ['Java', 'OOP', 'Collections', 'Multithreading'],
+		url: '/certificates/udemy-java-beginner-to-master.pdf',
+	},
+	{
+		title: 'Ultimate Web Development Course 2026 - Build Modern Websites: MERN Stack',
+		issuer: 'Udemy',
+		date: 'May 7, 2026',
+		description:
+			'Modern full-stack web development training covering React, Node.js, Express, MongoDB, REST APIs, and responsive UI design.',
+		skills: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+		url: '/certificates/udemy-mern-stack-development.jpg',
+	},
+	{
+		title: 'Learn C and C++ (Beginner to Advance)',
+		issuer: 'Udemy',
+		date: 'October 3, 2023',
+		description:
+			'Programming fundamentals, memory management, pointers, OOP, and problem-solving techniques using C and C++.',
+		skills: ['C', 'C++', 'Memory Management', 'Data Structures'],
+		url: '/certificates/udemy-c-and-cpp-beginner-to-advance.pdf',
+	},
+	{
+		title: 'Software Engineering Job Simulation',
+		issuer: 'J.P. Morgan Chase & Co. / Forage',
+		date: 'August 25, 2025',
+		description:
+			'Completed practical software engineering simulation tasks including Kafka integration, REST API integration, H2 database integration, and backend project setup.',
+		skills: ['Kafka', 'REST API', 'Backend Development', 'Java'],
+		url: '/certificates/forage-software-engineering-simulation.pdf',
+	},
+	{
+		title: 'Deloitte Data Analytics Job Simulation',
+		issuer: 'Deloitte / Forage',
+		date: 'August 25, 2025',
+		description:
+			'Hands-on analytics experience involving data cleaning, dashboard creation, business insights, and forensic technology analysis.',
+		skills: ['Data Analytics', 'Visualization', 'Forensic Technology'],
+		url: '/certificates/deloitte-forage-data-analytics-simulation.pdf',
+	},
 ];
 
 import type { IconType } from 'react-icons';
