@@ -91,12 +91,7 @@ export function AboutPreview() {
 							</h3>
 
 							<p className="text-lg leading-8 text-zinc-400">
-								I&apos;m a Computer Science undergraduate at
-								Amrita Vishwa Vidyapeetham, Bengaluru,
-								with strong foundations in Java,
-								MERN stack development, REST APIs,
-								data structures, backend systems,
-								and scalable application architecture.
+								I&apos;m Sreevanth Chowdhary Vadlamudi, a Computer Science graduate from Amrita Vishwa Vidyapeetham, Bengaluru. I have hands-on experience with Java, MERN stack development, REST APIs, data structures, backend systems, and full-stack application development. I enjoy building practical applications, working with different technologies, and solving problems through clean and efficient code.
 							</p>
 
 						</div>

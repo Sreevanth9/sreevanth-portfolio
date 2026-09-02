@@ -99,9 +99,14 @@ export default function AboutPage() {
               Backend Engineer • Java Developer • MERN Stack Developer
             </p>
 
-            <p className="text-zinc-300 text-base sm:text-lg leading-relaxed max-w-2xl mb-8 sm:mb-10">
-              Sreevanth Chowdhary Vadlamudi is a Computer Science undergraduate at Amrita Vishwa Vidyapeetham, Bengaluru, with focused experience in software engineering, backend systems, and full-stack application development. He specializes in designing clean REST APIs, structuring database schemas, and building practical software platforms with an emphasis on maintainability, reliability, and system performance.
-            </p>
+            <div className="space-y-4 max-w-2xl mb-8 sm:mb-10 text-zinc-300 text-base sm:text-lg leading-relaxed">
+              <p>
+                I&apos;m Sreevanth Chowdhary Vadlamudi, a Computer Science graduate from Amrita Vishwa Vidyapeetham, Bengaluru. I have hands-on experience with Java, MERN stack development, REST APIs, data structures, backend systems, and full-stack application development.
+              </p>
+              <p>
+                I enjoy building practical applications, solving technical problems, and learning through hands-on projects. My work has involved backend development, databases, APIs, AI-powered applications, and different areas of full-stack development, with a focus on writing clean and maintainable code.
+              </p>
+            </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-3 sm:gap-4 w-full max-w-xl">
 
@@ -396,7 +401,7 @@ export default function AboutPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          {skillCategories.map((category) => {
+          {skillCategories.slice(0, 3).map((category) => {
             const CategoryIcon = category.icon;
 
             return (
@@ -514,13 +519,17 @@ export default function AboutPage() {
               </p>
 
               <div className="inline-flex rounded-full bg-white/5 border border-white/10 px-4 py-1.5 text-xs sm:text-sm mt-3 text-zinc-300">
-                2022 - 2026
+                2022 – 2026
               </div>
 
-              <p className="text-zinc-400 leading-relaxed mt-6 sm:mt-8 text-sm sm:text-base">
-                Focused on software engineering, backend systems,
-                data structures, algorithms, and full-stack development.
-              </p>
+              <div className="space-y-4 text-zinc-400 leading-relaxed mt-6 sm:mt-8 text-sm sm:text-base">
+                <p>
+                  Pursued a strong foundation in computer science with a focus on software engineering, data structures and algorithms, object-oriented programming, database systems, operating systems, computer networks, and full-stack application development. Developed practical experience through academic and personal projects involving Java, JavaScript, React.js, Node.js, Express.js, REST APIs, and databases.
+                </p>
+                <p>
+                  Worked on projects involving AI-powered applications, backend systems, database-driven platforms, and algorithmic problem solving, applying concepts learned through coursework to build practical software solutions.
+                </p>
+              </div>
 
             </div>
 

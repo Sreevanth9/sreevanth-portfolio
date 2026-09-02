@@ -306,14 +306,15 @@ export type Education = {
 
 export const education: Education[] = [
 	{
-		degree: 'Bachelor of Technology',
+		degree: 'B.Tech in Computer Science & Engineering',
 		field: 'Computer Science and Engineering',
 		institution: 'Amrita Vishwa Vidyapeetham',
 		location: 'Bengaluru, India',
 		startDate: '2022',
 		endDate: '2026',
 		achievements: [
-			'Focused on software engineering, backend systems, data structures, algorithms, and full-stack development.',
+			'Pursued a strong foundation in computer science with a focus on software engineering, data structures and algorithms, object-oriented programming, database systems, operating systems, computer networks, and full-stack application development. Developed practical experience through academic and personal projects involving Java, JavaScript, React.js, Node.js, Express.js, REST APIs, and databases.',
+			'Worked on projects involving AI-powered applications, backend systems, database-driven platforms, and algorithmic problem solving, applying concepts learned through coursework to build practical software solutions.',
 		],
 	},
 	{
