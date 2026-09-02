@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { CalendarDays, ExternalLink, Award } from 'lucide-react';
-import Link from 'next/link';
 
 import { Card, CardContent } from '@/components/ui/card';
 import { SectionHeader } from '@/components/ui/section-header';
@@ -36,7 +35,7 @@ export default function CertificatesPage() {
 								}}
 								className="h-full"
 							>
-								<Link
+								<a
 									href={cert.url ?? '#'}
 									target="_blank"
 									rel="noopener noreferrer"
@@ -119,7 +118,7 @@ export default function CertificatesPage() {
 											</div>
 										</CardContent>
 									</Card>
-								</Link>
+								</a>
 							</motion.div>
 						))}
 					</div>

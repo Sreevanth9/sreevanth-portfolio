@@ -6,7 +6,7 @@ import { type DialogProps } from '@radix-ui/react-dialog';
 
 import { Command as CommandPrimitive } from 'cmdk';
 
-import { Search } from 'lucide-react';
+import { Search, X } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 
@@ -15,6 +15,7 @@ import {
 	DialogContent,
 	DialogClose,
 	DialogTitle,
+	DialogDescription,
 } from '@/components/ui/dialog';
 
 const Command = React.forwardRef<
@@ -61,38 +62,39 @@ const CommandDialog = ({
 			>
 
 				<DialogTitle className="sr-only">
-					Search Command
+					Search Portfolio
 				</DialogTitle>
 
-				{/* ESC BUTTON */}
+				<DialogDescription className="sr-only">
+					Search and navigate pages, portfolio projects, and technical skills.
+				</DialogDescription>
 
+				{/* CLOSE X BUTTON */}
 				<DialogClose asChild>
-
 					<button
+						aria-label="Close search"
 						className="
 							absolute
-							right-4
-							top-4
+							right-3.5
+							top-3.5
 							z-50
 							inline-flex
+							h-8 w-8
 							items-center
 							justify-center
-							rounded-md
+							rounded-xl
 							border border-white/10
 							bg-white/5
-							px-3 py-1
-							text-xs
-							font-medium
-							text-zinc-300
+							text-zinc-400
 							backdrop-blur-xl
 							transition-all
 							hover:bg-white/10
 							hover:text-white
+							focus:outline-none focus:ring-2 focus:ring-primary/40
 						"
 					>
-						ESC
+						<X className="h-4 w-4" />
 					</button>
-
 				</DialogClose>
 
 				<Command
