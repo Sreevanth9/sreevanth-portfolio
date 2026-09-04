@@ -211,8 +211,8 @@ export const selectedProjects: Project[] = [
 		link: 'https://dentiginee.lovable.app',
 		linkText: 'Visit Project',
 		repo: 'https://github.com/Sreevanth9/dentiginee',
-		reportUrl: '/SE_FINAL.pdf',
-		reportText: 'View Report',
+		reportUrl: '/documents/teledentistry-ai-paper.pdf',
+		reportText: 'View Paper',
 	},
 	{
 		title: 'SketchForce AI – Forensic Suspect Identification System',
@@ -277,7 +277,7 @@ export const selectedProjects: Project[] = [
 		image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=1200&auto=format&fit=crop',
 		tags: ['JavaScript', 'Graph Algorithms', 'Leaflet.js', 'Optimization'],
 		repo: 'https://github.com/Sreevanth9/EVRouteOptimizer',
-		reportUrl: '/DAA_Report.pdf',
+		reportUrl: '/documents/ev-route-optimizer-daa-report.pdf',
 		reportText: 'View Report',
 	},
 	{
@@ -313,7 +313,7 @@ export const selectedProjects: Project[] = [
 		image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop',
 		tags: ['React.js', 'Three.js', 'Leaflet.js', 'Chart.js', 'Telemetry', 'JavaScript'],
 		repo: 'https://github.com/Sreevanth9/cansat-gcs',
-		reportUrl: '/CanSat_Project_Report.pdf',
+		reportUrl: '/documents/cansat-project-report.pdf',
 		reportText: 'View Report',
 	},
 	{
@@ -488,6 +488,15 @@ export const certificates: Certificate[] = [
 			'In-depth training covering autonomous AI agents, multi-agent frameworks, tool usage patterns, reasoning loops, and production AI architectures.',
 		skills: ['Agentic AI', 'AI Agents', 'Autonomous Systems'],
 		url: '/certificates/linkedin-agentic-ai-fundamentals.pdf',
+	},
+	{
+		title: 'AWS Essential Training for Developers',
+		issuer: 'LinkedIn Learning',
+		date: 'September 3, 2026',
+		description:
+			'Developer-centric AWS cloud foundations covering Amazon EC2 compute, AWS Lambda serverless architectures, storage, security, and cloud deployment pipelines.',
+		skills: ['AWS', 'Amazon EC2', 'AWS Lambda', 'Cloud Computing'],
+		url: '/certificates/linkedin-aws-essential-training-for-developers.pdf',
 	},
 	{
 		title: 'Career Essentials in GitHub Professional Certificate',
@@ -769,6 +778,8 @@ export const skillCategories: SkillCategory[] = [
 			{ name: 'CI/CD Automation', icon: Workflow, featured: true },
 			{ name: 'Oracle Cloud (OCI)', icon: Cloud },
 			{ name: 'AWS', icon: FaAws, featured: true },
+			{ name: 'Amazon EC2', icon: FaAws },
+			{ name: 'AWS Lambda', icon: FaAws },
 			{ name: 'AWS S3', icon: FaAws },
 			{ name: 'AWS Rekognition', icon: Eye },
 			{ name: 'AWS SDK', icon: FaAws },
@@ -901,6 +912,8 @@ export const skillGroups: SkillGroup[] = [
 			'CI/CD Automation',
 			'Oracle Cloud (OCI)',
 			'AWS',
+			'Amazon EC2',
+			'AWS Lambda',
 			'AWS S3',
 			'AWS Rekognition',
 			'AWS SDK',
