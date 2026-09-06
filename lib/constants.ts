@@ -454,6 +454,15 @@ export const certificates: Certificate[] = [
 		url: '/certificates/udemy-java-beginner-to-master.pdf',
 	},
 	{
+		title: 'Claude Code 101',
+		issuer: 'Anthropic',
+		date: 'May 5, 2026',
+		description:
+			'AI-assisted development workflow training focused on Claude Code tooling, prompt engineering, productivity workflows, and developer acceleration.',
+		skills: ['Claude Code', 'AI Workflow', 'Prompt Engineering'],
+		url: '/certificates/claude-code-101.pdf',
+	},
+	{
 		title: 'Oracle Cloud Infrastructure 2025 Certified Generative AI Professional',
 		issuer: 'Oracle',
 		date: 'September 16, 2025',
@@ -463,13 +472,13 @@ export const certificates: Certificate[] = [
 		url: '/certificates/oracle-generative-ai-professional.pdf',
 	},
 	{
-		title: 'Claude Code 101',
-		issuer: 'Anthropic',
-		date: 'May 5, 2026',
+		title: 'AWS Essential Training for Developers',
+		issuer: 'LinkedIn Learning',
+		date: 'September 3, 2026',
 		description:
-			'AI-assisted development workflow training focused on Claude Code tooling, prompt engineering, productivity workflows, and developer acceleration.',
-		skills: ['Claude Code', 'AI Workflow', 'Prompt Engineering'],
-		url: '/certificates/claude-code-101.pdf',
+			'Developer-centric AWS cloud foundations covering Amazon EC2 compute, AWS Lambda serverless architectures, storage, security, and cloud deployment pipelines.',
+		skills: ['AWS', 'Amazon EC2', 'AWS Lambda', 'Cloud Computing'],
+		url: '/certificates/linkedin-aws-essential-training-for-developers.pdf',
 	},
 	{
 		title: 'Claude 101',
@@ -488,15 +497,6 @@ export const certificates: Certificate[] = [
 			'In-depth training covering autonomous AI agents, multi-agent frameworks, tool usage patterns, reasoning loops, and production AI architectures.',
 		skills: ['Agentic AI', 'AI Agents', 'Autonomous Systems'],
 		url: '/certificates/linkedin-agentic-ai-fundamentals.pdf',
-	},
-	{
-		title: 'AWS Essential Training for Developers',
-		issuer: 'LinkedIn Learning',
-		date: 'September 3, 2026',
-		description:
-			'Developer-centric AWS cloud foundations covering Amazon EC2 compute, AWS Lambda serverless architectures, storage, security, and cloud deployment pipelines.',
-		skills: ['AWS', 'Amazon EC2', 'AWS Lambda', 'Cloud Computing'],
-		url: '/certificates/linkedin-aws-essential-training-for-developers.pdf',
 	},
 	{
 		title: 'Career Essentials in GitHub Professional Certificate',
