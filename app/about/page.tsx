@@ -57,23 +57,23 @@ export default function AboutPage() {
 
   const expertise = [
     {
-      title: 'Backend Engineering',
-      desc: 'REST APIs, authentication systems, and scalable server architecture.',
+      title: 'Backend & System Architecture',
+      desc: 'Node.js, Express.js, Java, RESTful APIs, JWT/bcrypt authentication, and scalable server design.',
       icon: Server,
     },
     {
-      title: 'Java Development',
-      desc: 'Object-oriented programming, clean code principles, and system design.',
-      icon: Code2,
-    },
-    {
-      title: 'Full-Stack Development',
-      desc: 'React, Node.js, Express.js, MongoDB, and modern engineering workflows.',
+      title: 'Cloud Infrastructure & DevOps',
+      desc: 'Google Cloud Platform (Cloud IAM, Cloud Run, Cloud Build, Artifact Registry), ADC, Docker, and CI/CD.',
       icon: LayoutGrid,
     },
     {
-      title: 'AI-Integrated Systems',
-      desc: 'AI workflows, vision models, AWS cloud integration, and intelligent APIs.',
+      title: 'Full-Stack Development',
+      desc: 'TypeScript, JavaScript (ES6+), React.js, Next.js, responsive UI, and modern state management.',
+      icon: Code2,
+    },
+    {
+      title: 'Databases & Storage Systems',
+      desc: 'MongoDB, Supabase, Firebase Firestore, SQL, and robust data persistence layers.',
       icon: Cpu,
     },
   ];
@@ -90,7 +90,7 @@ export default function AboutPage() {
           <div className="order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left">
 
             <p className="text-primary tracking-[0.3em] text-xs sm:text-sm mb-4 sm:mb-6 font-medium">
-              SOFTWARE ENGINEER
+              FULL-STACK & BACKEND ENGINEER
             </p>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.15] mb-4 sm:mb-6">
@@ -98,15 +98,15 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-lg sm:text-xl text-zinc-300 mb-6 sm:mb-8 font-medium">
-              Backend Engineer • Java Developer • MERN Stack Developer
+              Backend Systems • Cloud Infrastructure (GCP) • Java & TypeScript
             </p>
 
             <div className="space-y-4 max-w-2xl mb-8 sm:mb-10 text-zinc-300 text-base sm:text-lg leading-relaxed">
               <p>
-                I&apos;m Vadlamudi Sreevanth Chowdhary, a Computer Science graduate from Amrita Vishwa Vidyapeetham, Bengaluru. I have hands-on experience with Java, MERN stack development, REST APIs, data structures, backend systems, and full-stack application development.
+                I&apos;m Vadlamudi Sreevanth Chowdhary, a Software Engineer specializing in backend systems architecture, Google Cloud infrastructure, and modern full-stack application development. My technical foundation is rooted in Core Java, TypeScript, JavaScript, Node.js, Express.js, and scalable cloud deployments.
               </p>
               <p>
-                I enjoy building practical applications, solving technical problems, and learning through hands-on projects. My work has involved backend development, databases, APIs, AI-powered applications, and different areas of full-stack development, with a focus on writing clean and maintainable code.
+                I build production-grade platforms with a strong emphasis on Google Cloud services—leveraging Cloud IAM, Cloud Run, Cloud Build, Artifact Registry, and Application Default Credentials (ADC) for zero-key security architectures and automated container pipelines. Whether architecting resilient RESTful APIs, optimizing relational and document databases, or building interactive web applications, I focus on delivering secure, performant, and maintainable software.
               </p>
             </div>
 
@@ -500,30 +500,45 @@ export default function AboutPage() {
             <div>
 
               <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-white">
-                Education
+                Academic Foundation
               </h2>
 
               <h3 className="text-xl sm:text-2xl font-semibold text-primary mb-3 sm:mb-4">
                 B.Tech in Computer Science & Engineering
               </h3>
 
-              <p className="text-base sm:text-lg text-zinc-300 mb-2 font-medium">
-                Amrita Vishwa Vidyapeetham, Bengaluru
-              </p>
-
-              <div className="inline-flex rounded-full bg-white/5 border border-white/10 px-4 py-1.5 text-xs sm:text-sm mt-3 text-zinc-300">
+              <div className="inline-flex rounded-full bg-white/5 border border-white/10 px-4 py-1.5 text-xs sm:text-sm mt-1 text-zinc-300">
                 2022 – 2026
               </div>
 
               <div className="space-y-4 text-zinc-400 leading-relaxed mt-6 sm:mt-8 text-sm sm:text-base">
                 <p>
-                  Pursued a strong foundation in computer science with a focus on software engineering, data structures and algorithms, object-oriented programming, database systems, operating systems, computer networks, and full-stack application development. Developed practical experience through academic and personal projects involving Java, JavaScript, React.js, Node.js, Express.js, REST APIs, and databases.
+                  Rigorous academic curriculum with deep grounding in core computer science, software engineering principles, data structures & algorithms, object-oriented systems design, database systems, operating systems, and computer networks.
                 </p>
                 <p>
-                  Worked on projects involving AI-powered applications, backend systems, database-driven platforms, and algorithmic problem solving, applying concepts learned through coursework to build practical software solutions.
+                  Demonstrated ability to translate theoretical computing foundations directly into scalable backend architectures, cloud-native deployments, and modern full-stack software systems.
                 </p>
               </div>
 
+            </div>
+
+            <div className="pt-8 flex justify-start">
+              <Link
+                href="/education"
+                className="
+                  inline-flex items-center justify-center
+                  bg-[#20ae93] hover:bg-[#1a957d]
+                  text-white font-semibold text-base
+                  h-14 px-8
+                  rounded-[24px]
+                  shadow-lg shadow-[#20ae93]/25 hover:shadow-[#20ae93]/40
+                  hover:-translate-y-0.5
+                  transition-all duration-300
+                "
+              >
+                View Education Details
+                <ArrowRight className="ml-3 h-5 w-5" />
+              </Link>
             </div>
 
           </div>

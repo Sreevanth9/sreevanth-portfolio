@@ -27,8 +27,7 @@ export function AboutPreview() {
 				<SectionHeader
 					title="About Me"
 					description="
-						Computer Science undergraduate focused on backend development,
-						full-stack products, and scalable software systems.
+						Software Engineer focused on backend architecture, Google Cloud infrastructure, and scalable full-stack software systems.
 					"
 				/>
 
@@ -87,11 +86,11 @@ export function AboutPreview() {
 						<div className="space-y-5">
 
 							<h3 className="text-4xl font-extrabold tracking-tight">
-								Software Developer
+								Backend & Cloud Systems Engineer
 							</h3>
 
 							<p className="text-lg leading-8 text-zinc-400">
-								I&apos;m Vadlamudi Sreevanth Chowdhary, a Computer Science graduate from Amrita Vishwa Vidyapeetham, Bengaluru. I have hands-on experience with Java, MERN stack development, REST APIs, data structures, backend systems, and full-stack application development. I enjoy building practical applications, working with different technologies, and solving problems through clean and efficient code.
+								I&apos;m Vadlamudi Sreevanth Chowdhary, a Software Engineer focused on backend systems architecture, Google Cloud infrastructure, and full-stack application development. I specialize in Core Java, TypeScript, JavaScript, Node.js, and Express, alongside cloud-native deployments with GCP (Cloud IAM, Cloud Run, Cloud Build) and Docker. I build secure, reliable, and high-performance software systems.
 							</p>
 
 						</div>
@@ -111,66 +110,16 @@ export function AboutPreview() {
 
 								<div className="flex items-center gap-3 mb-3">
 
-									<GraduationCap className="h-5 w-5 text-primary" />
-
-									<h4 className="font-semibold text-lg">
-										Education
-									</h4>
-
-								</div>
-
-								<p className="text-zinc-400">
-									B.Tech CSE
-								</p>
-
-							</div>
-
-							<div
-								className="
-									card-gradient
-									rounded-[24px]
-									p-6
-									border border-white/10
-								"
-							>
-
-								<div className="flex items-center gap-3 mb-3">
-
 									<Code2 className="h-5 w-5 text-primary" />
 
 									<h4 className="font-semibold text-lg">
-										Primary Skill
+										Core Languages
 									</h4>
 
 								</div>
 
 								<p className="text-zinc-400">
-									Java Development
-								</p>
-
-							</div>
-
-							<div
-								className="
-									card-gradient
-									rounded-[24px]
-									p-6
-									border border-white/10
-								"
-							>
-
-								<div className="flex items-center gap-3 mb-3">
-
-									<FolderKanban className="h-5 w-5 text-primary" />
-
-									<h4 className="font-semibold text-lg">
-										Projects
-									</h4>
-
-								</div>
-
-								<p className="text-zinc-400">
-									AI, MERN, Graph Algorithms
+									Java, TypeScript, JavaScript, Python
 								</p>
 
 							</div>
@@ -189,13 +138,63 @@ export function AboutPreview() {
 									<Server className="h-5 w-5 text-primary" />
 
 									<h4 className="font-semibold text-lg">
-										Focus
+										Backend & APIs
 									</h4>
 
 								</div>
 
 								<p className="text-zinc-400">
-									Backend Systems
+									Node.js, Express.js, REST APIs, JWT
+								</p>
+
+							</div>
+
+							<div
+								className="
+									card-gradient
+									rounded-[24px]
+									p-6
+									border border-white/10
+								"
+							>
+
+								<div className="flex items-center gap-3 mb-3">
+
+									<FolderKanban className="h-5 w-5 text-primary" />
+
+									<h4 className="font-semibold text-lg">
+										Cloud & DevOps
+									</h4>
+
+								</div>
+
+								<p className="text-zinc-400">
+									GCP (IAM, Run, Build), Docker, ADC
+								</p>
+
+							</div>
+
+							<div
+								className="
+									card-gradient
+									rounded-[24px]
+									p-6
+									border border-white/10
+								"
+							>
+
+								<div className="flex items-center gap-3 mb-3">
+
+									<GraduationCap className="h-5 w-5 text-primary" />
+
+									<h4 className="font-semibold text-lg">
+										Databases & Storage
+									</h4>
+
+								</div>
+
+								<p className="text-zinc-400">
+									MongoDB, Supabase, Firebase Firestore, SQL
 								</p>
 
 							</div>

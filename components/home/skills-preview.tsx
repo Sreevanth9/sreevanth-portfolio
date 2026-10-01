@@ -14,12 +14,15 @@ import {
 import {
 	SiJavascript,
 	SiTypescript,
+	SiPython,
 	SiReact,
 	SiNextdotjs,
 	SiTailwindcss,
 	SiNodedotjs,
 	SiExpress,
 	SiMongodb,
+	SiFastapi,
+	SiGooglecloud,
 } from 'react-icons/si';
 
 import {
@@ -49,18 +52,36 @@ export function SkillsPreview() {
 					icon: FaJava,
 				},
 				{
-					name: 'JavaScript',
-					icon: SiJavascript,
-				},
-				{
 					name: 'TypeScript',
 					icon: SiTypescript,
+				},
+				{
+					name: 'Python',
+					icon: SiPython,
 				},
 			],
 		},
 		{
-			title: 'Frontend',
-			icon: Code2,
+			title: 'Backend & Cloud',
+			icon: Server,
+			skills: [
+				{
+					name: 'FastAPI',
+					icon: SiFastapi,
+				},
+				{
+					name: 'Node.js',
+					icon: SiNodedotjs,
+				},
+				{
+					name: 'Google Cloud (GCP)',
+					icon: SiGooglecloud,
+				},
+			],
+		},
+		{
+			title: 'Frontend & Database',
+			icon: Database,
 			skills: [
 				{
 					name: 'React.js',
@@ -71,25 +92,7 @@ export function SkillsPreview() {
 					icon: SiNextdotjs,
 				},
 				{
-					name: 'Tailwind CSS',
-					icon: SiTailwindcss,
-				},
-			],
-		},
-		{
-			title: 'Backend',
-			icon: Server,
-			skills: [
-				{
-					name: 'Node.js',
-					icon: SiNodedotjs,
-				},
-				{
-					name: 'Express.js',
-					icon: SiExpress,
-				},
-				{
-					name: 'MongoDB',
+					name: 'MongoDB / Firestore',
 					icon: SiMongodb,
 				},
 			],

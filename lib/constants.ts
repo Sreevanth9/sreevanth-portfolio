@@ -1,7 +1,7 @@
 export const siteConfig = {
 	name: 'Vadlamudi Sreevanth Chowdhary',
 	description:
-		'Personal portfolio of Vadlamudi Sreevanth Chowdhary — Software engineer building scalable web applications, REST APIs, AI-assisted systems, and modern full-stack platforms.',
+		'Personal portfolio of Vadlamudi Sreevanth Chowdhary — Software Engineer specializing in backend architecture, Google Cloud infrastructure (GCP), Core Java, TypeScript, Node.js, and modern full-stack software systems.',
 	mainNav: [
 		{
 			title: 'Home',
@@ -69,21 +69,65 @@ export type Experience = {
 	documents?: ExperienceDocument[];
 };
 
-export const primaryExperience: Experience = {
+export const trajectoryMindsExperience: Experience = {
+	title: 'Full Stack Developer Intern',
+	company: 'Trajectory Minds Software Solutions',
+	category: 'Full-Stack Development & Cloud Infrastructure',
+	location: 'Remote',
+	startDate: 'September 16, 2026',
+	endDate: 'Present',
+	period: 'September 2026 – Present',
+	summary:
+		'Engineering full-stack web applications, FastAPI backend services, dual-storage lead capture systems with Google Sheets and Firebase Firestore, and automated GCP CI/CD deployment pipelines.',
+	isPrimary: true,
+	description: [
+		'Developed and optimized full-stack web workflows with a high-performance Python FastAPI backend, RESTful endpoints, and responsive user-facing interfaces.',
+		'Engineered an enterprise lead capture and inquiry system with dual persistence across Google Sheets API and Firebase Firestore (contact_submissions collection).',
+		'Architected a zero-key cloud deployment pipeline on Google Cloud Run leveraging Application Default Credentials (ADC) and custom IAM Service Accounts.',
+		'Configured end-to-end CI/CD automation via GitHub → Google Cloud Build → Google Artifact Registry → Cloud Run using multi-stage Docker containerization.',
+		'Implemented comprehensive security hardening including Pydantic/backend input validation, honeypot anti-spam defense, strict Firestore security rules, and formula injection escaping.',
+		'Designed an interactive confirmation UX featuring animated status indicators, multi-step onboarding progression, and double-submission protection.',
+		'Eliminated container startup race conditions in Cloud Run by refactoring database and Google API clients to non-blocking lazy initializations.',
+	],
+	technologies: [
+		'FastAPI',
+		'Python',
+		'Google Cloud Platform',
+		'Cloud Run',
+		'Cloud Build',
+		'Artifact Registry',
+		'Docker',
+		'Firebase Firestore',
+		'Google Sheets API',
+		'Cloud IAM',
+		'Application Default Credentials (ADC)',
+		'React.js',
+		'REST APIs',
+		'CI/CD',
+		'Web Security',
+	],
+	documents: [
+		{
+			title: 'View Offer Letter',
+			url: '/documents/trajectory-minds-internship-offer-letter.pdf',
+		},
+	],
+};
+
+export const indiaSpaceLabExperience: Experience = {
 	title: 'Research & Software Development Intern',
 	company: 'India Space Lab',
-	category: 'Space Technology & Software Development',
+	category: 'Space Technology & Aerospace Software',
 	location: 'Remote',
 	startDate: 'May 1, 2026',
 	endDate: 'June 15, 2026',
 	period: 'May 1, 2026 – June 15, 2026',
 	summary:
 		'Completed a Summer Internship & Technical Training Program focused on space technology, autonomous systems, and aerospace software development.',
-	isPrimary: true,
 	description: [
-		'Developed an ISRO-inspired CanSat Ground Control Software (GCS) using React.js, JavaScript, and Three.js for mission visualization and monitoring.',
-		'Implemented Python-based PID Controller Tuning and Autonomous Navigation solutions for engineering applications.',
-		'Worked on telemetry processing and mission visualization using Leaflet.js and Chart.js.',
+		'Developed an ISRO-inspired CanSat Ground Control Software (GCS) using React.js, JavaScript, and Three.js for real-time mission visualization and telemetry monitoring.',
+		'Implemented Python-based PID Controller Tuning and Autonomous Navigation algorithms for engineering applications.',
+		'Worked on telemetry processing, sensor charting, and mission mapping using Leaflet.js and Chart.js.',
 		'Gained hands-on exposure to CanSat & CubeSat systems, Advanced Drone Technology, Rocketry, Remote Sensing & GIS, and Disaster Management.',
 		'Completed projects involving PID Controller Tuning, Autonomous Navigation, and Designing of GCS for CanSat.',
 	],
@@ -109,8 +153,19 @@ export const primaryExperience: Experience = {
 			title: 'View Internship Certificate',
 			url: '/documents/india-space-lab-internship-certificate.pdf',
 		},
+		{
+			title: 'View Evaluation Report',
+			url: '/documents/india-space-lab-evaluation-report.pdf',
+		},
 	],
 };
+
+export const professionalExperiences: Experience[] = [
+	trajectoryMindsExperience,
+	indiaSpaceLabExperience,
+];
+
+export const primaryExperience: Experience = trajectoryMindsExperience;
 
 export const engineeringExperiences: Experience[] = [
 	{
@@ -160,7 +215,7 @@ export const engineeringExperiences: Experience[] = [
 ];
 
 export const experiences: Experience[] = [
-	primaryExperience,
+	...professionalExperiences,
 	...engineeringExperiences,
 ];
 
@@ -620,7 +675,6 @@ import {
 	SiExpress,
 	SiSocketdotio,
 	SiMongodb,
-	SiPostgresql,
 	SiSupabase,
 	SiMysql,
 	SiOpenai,
@@ -635,6 +689,10 @@ import {
 	SiLinux,
 	SiPostman,
 	SiNpm,
+	SiFastapi,
+	SiGooglecloud,
+	SiFirebase,
+	SiGooglesheets,
 } from 'react-icons/si';
 import { VscCode } from 'react-icons/vsc';
 import { TbApi } from 'react-icons/tb';
@@ -694,7 +752,7 @@ export const skillCategories: SkillCategory[] = [
 			{ name: 'Java', icon: FaJava, featured: true },
 			{ name: 'JavaScript (ES6+)', icon: SiJavascript, featured: true },
 			{ name: 'TypeScript', icon: SiTypescript, featured: true },
-			{ name: 'Python', icon: SiPython },
+			{ name: 'Python', icon: SiPython, featured: true },
 			{ name: 'C', icon: FaCode },
 			{ name: 'C++', icon: SiCplusplus },
 			{ name: 'SQL', icon: FaDatabase },
@@ -723,9 +781,11 @@ export const skillCategories: SkillCategory[] = [
 		title: 'Backend Development',
 		icon: Server,
 		skills: [
+			{ name: 'FastAPI', icon: SiFastapi, featured: true },
 			{ name: 'Node.js', icon: SiNodedotjs, featured: true },
 			{ name: 'Express.js', icon: SiExpress, featured: true },
 			{ name: 'REST APIs', icon: TbApi, featured: true },
+			{ name: 'Python Backend', icon: SiPython, featured: true },
 			{ name: 'Socket.io', icon: SiSocketdotio },
 			{ name: 'Server-Sent Events (SSE)', icon: Zap },
 			{ name: 'API Integration', icon: TbApi },
@@ -734,13 +794,14 @@ export const skillCategories: SkillCategory[] = [
 		],
 	},
 	{
-		title: 'Databases',
+		title: 'Databases & Storage',
 		icon: Database,
 		skills: [
 			{ name: 'MongoDB', icon: SiMongodb, featured: true },
-			{ name: 'Mongoose', icon: SiMongodb },
-			{ name: 'PostgreSQL', icon: SiPostgresql, featured: true },
+			{ name: 'Firebase Firestore', icon: SiFirebase, featured: true },
 			{ name: 'Supabase', icon: SiSupabase, featured: true },
+			{ name: 'Google Sheets API', icon: SiGooglesheets },
+			{ name: 'Mongoose', icon: SiMongodb },
 			{ name: 'MySQL', icon: SiMysql },
 			{ name: 'Oracle SQL', icon: FaDatabase },
 			{ name: 'H2 Database', icon: FaDatabase },
@@ -774,6 +835,11 @@ export const skillCategories: SkillCategory[] = [
 		title: 'Cloud & DevOps',
 		icon: Cloud,
 		skills: [
+			{ name: 'Google Cloud Platform (GCP)', icon: SiGooglecloud, featured: true },
+			{ name: 'Cloud Run', icon: SiGooglecloud, featured: true },
+			{ name: 'Cloud Build', icon: Workflow, featured: true },
+			{ name: 'Artifact Registry', icon: Boxes },
+			{ name: 'Docker', icon: SiDocker, featured: true },
 			{ name: 'GitHub Actions', icon: GitBranch, featured: true },
 			{ name: 'CI/CD Automation', icon: Workflow, featured: true },
 			{ name: 'Oracle Cloud (OCI)', icon: Cloud },
@@ -785,7 +851,6 @@ export const skillCategories: SkillCategory[] = [
 			{ name: 'AWS SDK', icon: FaAws },
 			{ name: 'AWS Amplify', icon: FaAws },
 			{ name: 'AWS App Runner', icon: Rocket },
-			{ name: 'Docker', icon: SiDocker, featured: true },
 			{ name: 'Docker Compose', icon: SiDocker },
 			{ name: 'CloudFront', icon: Globe },
 			{ name: 'Vercel', icon: SiVercel },
@@ -795,7 +860,12 @@ export const skillCategories: SkillCategory[] = [
 		title: 'Authentication & Security',
 		icon: ShieldCheck,
 		skills: [
-			{ name: 'JWT Authentication', icon: SiJsonwebtokens },
+			{ name: 'Google Cloud IAM', icon: KeyRound, featured: true },
+			{ name: 'Application Default Credentials (ADC)', icon: ShieldCheck, featured: true },
+			{ name: 'JWT Authentication', icon: SiJsonwebtokens, featured: true },
+			{ name: 'Firestore Security Rules', icon: Shield },
+			{ name: 'Anti-Spam / Honeypot Defense', icon: Bot },
+			{ name: 'Formula Injection Prevention', icon: ShieldCheck },
 			{ name: 'bcrypt', icon: ShieldCheck },
 			{ name: 'OTP Authentication', icon: KeyRound },
 			{ name: 'Role-Based Access Control', icon: Users },
@@ -869,9 +939,11 @@ export const skillGroups: SkillGroup[] = [
 	{
 		title: 'Backend Development',
 		skills: [
+			'FastAPI',
 			'Node.js',
 			'Express.js',
 			'REST APIs',
+			'Python Backend',
 			'Socket.io',
 			'Server-Sent Events (SSE)',
 			'API Integration',
@@ -880,8 +952,8 @@ export const skillGroups: SkillGroup[] = [
 		],
 	},
 	{
-		title: 'Databases',
-		skills: ['MongoDB', 'Mongoose', 'PostgreSQL', 'Supabase', 'MySQL', 'Oracle SQL', 'H2 Database', 'SQLite'],
+		title: 'Databases & Storage',
+		skills: ['MongoDB', 'Firebase Firestore', 'Supabase', 'Google Sheets API', 'Mongoose', 'MySQL', 'Oracle SQL', 'H2 Database', 'SQLite'],
 	},
 	{
 		title: 'AI & Machine Learning',
@@ -908,6 +980,11 @@ export const skillGroups: SkillGroup[] = [
 	{
 		title: 'Cloud & DevOps',
 		skills: [
+			'Google Cloud Platform (GCP)',
+			'Cloud Run',
+			'Cloud Build',
+			'Artifact Registry',
+			'Docker',
 			'GitHub Actions',
 			'CI/CD Automation',
 			'Oracle Cloud (OCI)',
@@ -919,7 +996,6 @@ export const skillGroups: SkillGroup[] = [
 			'AWS SDK',
 			'AWS Amplify',
 			'AWS App Runner',
-			'Docker',
 			'Docker Compose',
 			'CloudFront',
 			'Vercel',
@@ -928,7 +1004,12 @@ export const skillGroups: SkillGroup[] = [
 	{
 		title: 'Authentication & Security',
 		skills: [
+			'Google Cloud IAM',
+			'Application Default Credentials (ADC)',
 			'JWT Authentication',
+			'Firestore Security Rules',
+			'Anti-Spam / Honeypot Defense',
+			'Formula Injection Prevention',
 			'bcrypt',
 			'OTP Authentication',
 			'Role-Based Access Control',
