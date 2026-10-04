@@ -109,9 +109,34 @@ export function Footer() {
 						</Link>
 
 						<p className="mt-4 text-sm leading-7 text-muted-foreground">
-							Backend-first portfolio and project showcase
-							built for modern product teams.
+							Software Engineer specializing in backend systems, Google Cloud infrastructure (GCP), Core Java, TypeScript, and scalable applications.
 						</p>
+
+						<div className="mt-4 space-y-1.5 text-xs text-muted-foreground">
+							<p className="flex items-center gap-2">
+								<Mail className="h-3.5 w-3.5 text-primary shrink-0" />
+								<a href="mailto:vsreevanth@gmail.com" className="hover:text-primary transition-colors">
+									vsreevanth@gmail.com
+								</a>
+							</p>
+							<p className="flex items-center gap-2">
+								<Phone className="h-3.5 w-3.5 text-primary shrink-0" />
+								<a href="tel:+917207818784" className="hover:text-primary transition-colors">
+									+91 72078 18784
+								</a>
+							</p>
+							<p className="flex items-center gap-2">
+								<span className="text-primary font-bold">•</span>
+								<a
+									href="https://maps.google.com/?q=Bengaluru,India"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="hover:text-primary transition-colors"
+								>
+									Bengaluru, Karnataka, India
+								</a>
+							</p>
+						</div>
 
 						<div className="mt-6 flex flex-wrap gap-3">
 
@@ -126,8 +151,8 @@ export function Footer() {
 									<a
 										href={link.href}
 										aria-label={link.label}
-										target="_blank"
-										rel="noreferrer"
+										target={link.href.startsWith('http') ? '_blank' : undefined}
+										rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
 									>
 										{link.icon}
 									</a>
@@ -161,7 +186,12 @@ export function Footer() {
 														? '_blank'
 														: undefined
 												}
-												rel="noreferrer"
+												rel={
+													link.href.startsWith('http') ||
+													link.href.endsWith('.pdf')
+														? 'noopener noreferrer'
+														: undefined
+												}
 												className="text-muted-foreground hover:text-primary text-sm transition-colors"
 											>
 												{link.title}
@@ -181,11 +211,14 @@ export function Footer() {
 
 				<Separator className="my-8 bg-white/10" />
 
-				<div className="flex flex-col sm:flex-row items-center justify-between text-sm">
+				<div className="flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm gap-2">
 
 					<p className="text-muted-foreground text-center sm:text-left">
-						© {currentYear} Vadlamudi Sreevanth Chowdhary.
-						Built for backend systems, APIs, and scalable product engineering.
+						© {currentYear} Vadlamudi Sreevanth Chowdhary. All rights reserved.
+					</p>
+
+					<p className="text-zinc-500 text-center sm:text-right text-xs">
+						Engineered for Scalable Backend Systems & Cloud Infrastructure
 					</p>
 
 				</div>

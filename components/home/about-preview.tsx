@@ -25,6 +25,7 @@ export function AboutPreview() {
 			<div className="container mx-auto max-w-7xl px-6">
 
 				<SectionHeader
+					isH2={true}
 					title="About Me"
 					description="
 						Software Engineer focused on backend architecture, Google Cloud infrastructure, and scalable full-stack software systems.

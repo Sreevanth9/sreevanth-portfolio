@@ -106,6 +106,7 @@ export function SkillsPreview() {
 			<div className="container px-4">
 
 				<SectionHeader
+					isH2={true}
 					title="Technical Skills"
 					description="
 						Core technologies and development skills

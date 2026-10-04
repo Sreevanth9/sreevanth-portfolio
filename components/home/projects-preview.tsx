@@ -35,6 +35,7 @@ export function ProjectsPreview() {
 			<div className="container mx-auto max-w-7xl px-6">
 
 				<SectionHeader
+					isH2={true}
 					title="Featured Projects"
 					description="
 						Explore some of my recent engineering projects,
