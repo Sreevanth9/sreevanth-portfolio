@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Contact Vadlamudi Sreevanth Chowdhary',
+	title: 'Contact Vadlamudi Sreevanth Chowdhary | Sreevanth Chowdary',
 	description:
-		'Get in touch with Vadlamudi Sreevanth Chowdhary for software engineering opportunities, technical collaborations, or project inquiries.',
+		'Contact Vadlamudi Sreevanth Chowdhary (also known as Sreevanth Chowdary, Sreevanth Chowdhary, Sreevanth Vadlamudi, Sreevanth Choudhary) for software engineering roles, backend systems architecture, and technical inquiries.',
 	alternates: {
 		canonical: 'https://sreevanth-portfolio.vercel.app/contact',
 	},
 	openGraph: {
-		title: 'Contact Vadlamudi Sreevanth Chowdhary',
+		title: 'Contact Vadlamudi Sreevanth Chowdhary | Sreevanth Chowdary',
 		description:
-			'Connect with Vadlamudi Sreevanth Chowdhary for software engineering opportunities and collaborations.',
+			'Connect with Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary) for software engineering opportunities and collaborations.',
 		url: 'https://sreevanth-portfolio.vercel.app/contact',
 	},
 };

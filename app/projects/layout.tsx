@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Vadlamudi Sreevanth Chowdhary | Projects',
+	title: 'Projects | Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary)',
 	description:
-		'Software engineering projects built by Vadlamudi Sreevanth Chowdhary, spanning AI-assisted platforms, MERN stack web applications, and backend systems.',
+		'Software engineering projects, AI platforms, and research publications by Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary, Sreevanth Chowdhary, Sreevanth Vadlamudi, Sreevanth Choudhary).',
 	alternates: {
 		canonical: 'https://sreevanth-portfolio.vercel.app/projects',
 	},
 	openGraph: {
-		title: 'Vadlamudi Sreevanth Chowdhary | Projects',
+		title: 'Projects | Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary)',
 		description:
-			'Software engineering projects and technical platforms built by Vadlamudi Sreevanth Chowdhary.',
+			'Software engineering projects and technical platforms built by Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary).',
 		url: 'https://sreevanth-portfolio.vercel.app/projects',
 	},
 };

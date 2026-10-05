@@ -1,7 +1,7 @@
 export const siteConfig = {
 	name: 'Vadlamudi Sreevanth Chowdhary',
 	description:
-		'Personal portfolio of Vadlamudi Sreevanth Chowdhary — Software Engineer specializing in backend architecture, Google Cloud infrastructure (GCP), Core Java, TypeScript, Node.js, and modern full-stack software systems.',
+		'Vadlamudi Sreevanth Chowdhary (also searched as Sreevanth Chowdary, Sreevanth Chowdhary, Sreevanth Vadlamudi, Vadlamudi Sreevanth, Sreevanth Choudhary, Sravanth Chowdary, Srivanth Chowdary, Sreevanth V, V Sreevanth) — Software Engineer & Full-Stack Developer specializing in backend architecture, Google Cloud (GCP), Core Java, TypeScript, and modern scalable software systems.',
 	mainNav: [
 		{
 			title: 'Home',
