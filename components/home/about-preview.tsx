@@ -91,7 +91,7 @@ export function AboutPreview() {
 							</h3>
 
 							<p className="text-lg leading-8 text-zinc-400">
-								I&apos;m Vadlamudi Sreevanth Chowdhary (also known as Sreevanth Chowdary), a Software Engineer focused on backend systems architecture, Google Cloud infrastructure, and full-stack application development. I specialize in Core Java, TypeScript, JavaScript, Node.js, and Express, alongside cloud-native deployments with GCP (Cloud IAM, Cloud Run, Cloud Build) and Docker. I build secure, reliable, and high-performance software systems.
+								I&apos;m Vadlamudi Sreevanth Chowdhary, a Software Engineer focused on backend systems architecture, Google Cloud infrastructure, and full-stack application development. I specialize in Core Java, TypeScript, JavaScript, Node.js, and Express, alongside cloud-native deployments with GCP (Cloud IAM, Cloud Run, Cloud Build) and Docker. I build secure, reliable, and high-performance software systems.
 							</p>
 
 						</div>
