@@ -5,13 +5,13 @@ export const metadata: Metadata = {
 	description:
 		'Academic background and education of Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary, Sreevanth Chowdhary, Sreevanth Vadlamudi) at Amrita Vishwa Vidyapeetham, Bengaluru.',
 	alternates: {
-		canonical: 'https://sreevanth-portfolio.vercel.app/education',
+		canonical: 'https://sreevanth.is-a.dev/education',
 	},
 	openGraph: {
 		title: 'Education | Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary)',
 		description:
 			'Academic background and education details of Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary).',
-		url: 'https://sreevanth-portfolio.vercel.app/education',
+		url: 'https://sreevanth.is-a.dev/education',
 	},
 };
 

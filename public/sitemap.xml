@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sreevanth-portfolio.vercel.app/</loc>
+    <loc>https://sreevanth.is-a.dev/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sreevanth-portfolio.vercel.app/about</loc>
+    <loc>https://sreevanth.is-a.dev/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sreevanth-portfolio.vercel.app/projects</loc>
+    <loc>https://sreevanth.is-a.dev/projects</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sreevanth-portfolio.vercel.app/skills</loc>
+    <loc>https://sreevanth.is-a.dev/skills</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sreevanth-portfolio.vercel.app/experience</loc>
+    <loc>https://sreevanth.is-a.dev/experience</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sreevanth-portfolio.vercel.app/education</loc>
+    <loc>https://sreevanth.is-a.dev/education</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sreevanth-portfolio.vercel.app/certificates</loc>
+    <loc>https://sreevanth.is-a.dev/certificates</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sreevanth-portfolio.vercel.app/contact</loc>
+    <loc>https://sreevanth.is-a.dev/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

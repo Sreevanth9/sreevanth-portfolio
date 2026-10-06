@@ -19,7 +19,7 @@ Built using modern frontend technologies with optimized performance, responsive 
 
 <br>
 
-[![Live Website](https://img.shields.io/badge/🌐_Live_Website-Visit_Now-14b8a6?style=for-the-badge)](https://sreevanth-portfolio.vercel.app)
+[![Live Website](https://img.shields.io/badge/🌐_Live_Website-Visit_Now-14b8a6?style=for-the-badge)](https://sreevanth.is-a.dev)
 
 </div>
 

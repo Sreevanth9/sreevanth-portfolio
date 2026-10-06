@@ -5,13 +5,13 @@ export const metadata: Metadata = {
 	description:
 		'Technical skills and competencies of Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary, Sreevanth Chowdhary, Sreevanth Vadlamudi, Sreevanth Choudhary) across Java, TypeScript, Python, FastAPI, Node.js, GCP, and databases.',
 	alternates: {
-		canonical: 'https://sreevanth-portfolio.vercel.app/skills',
+		canonical: 'https://sreevanth.is-a.dev/skills',
 	},
 	openGraph: {
 		title: 'Skills | Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary)',
 		description:
 			'Technical skills and competencies of Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary).',
-		url: 'https://sreevanth-portfolio.vercel.app/skills',
+		url: 'https://sreevanth.is-a.dev/skills',
 	},
 };
 

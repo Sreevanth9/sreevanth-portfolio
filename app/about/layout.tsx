@@ -5,13 +5,13 @@ export const metadata: Metadata = {
 	description:
 		'Vadlamudi Sreevanth Chowdhary (also known as Sreevanth Chowdary, Sreevanth Chowdhary, Sreevanth Vadlamudi, Vadlamudi Sreevanth, Sreevanth Choudhary) — Software Engineer and Computer Science Undergraduate.',
 	alternates: {
-		canonical: 'https://sreevanth-portfolio.vercel.app/about',
+		canonical: 'https://sreevanth.is-a.dev/about',
 	},
 	openGraph: {
 		title: 'About Vadlamudi Sreevanth Chowdhary | Sreevanth Chowdary',
 		description:
 			'Background, technical skills, and experience of Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary).',
-		url: 'https://sreevanth-portfolio.vercel.app/about',
+		url: 'https://sreevanth.is-a.dev/about',
 	},
 };
 

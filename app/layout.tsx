@@ -6,7 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sreevanth-portfolio.vercel.app';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sreevanth.is-a.dev';
 
 export const metadata: Metadata = {
 	metadataBase: new URL(siteUrl),
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 	creator: 'Vadlamudi Sreevanth Chowdhary',
 	publisher: 'Vadlamudi Sreevanth Chowdhary',
 	alternates: {
-		canonical: 'https://sreevanth-portfolio.vercel.app/',
+		canonical: 'https://sreevanth.is-a.dev/',
 	},
 	verification: {
 		google: '_BhEdTcBn39z3tcXPOkRer5CFuNEop7qMFbfJyyq12w',
