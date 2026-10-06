@@ -61,7 +61,11 @@ export const metadata: Metadata = {
 		canonical: 'https://sreevanth.is-a.dev/',
 	},
 	verification: {
-		google: ['_BhEdTcBn39z3tcXPOkRer5CFuNEop7qMFbfJyyq12w', 'c5c3abd44d1f41c7'],
+		google: [
+			'dLSPQgvoYpTRe9zpR_aRJG6ExxTAZ6SoOyiV9MqFmYU',
+			'_BhEdTcBn39z3tcXPOkRer5CFuNEop7qMFbfJyyq12w',
+			'c5c3abd44d1f41c7',
+		],
 	},
 	robots: {
 		index: true,
