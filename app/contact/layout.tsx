@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Contact Vadlamudi Sreevanth Chowdhary | Sreevanth Chowdary',
+	title: 'Contact',
 	description:
-		'Contact Vadlamudi Sreevanth Chowdhary (also known as Sreevanth Chowdary, Sreevanth Chowdhary, Sreevanth Vadlamudi, Sreevanth Choudhary) for software engineering roles, backend systems architecture, and technical inquiries.',
+		'Get in touch with Vadlamudi Sreevanth Chowdhary for software engineering roles, backend systems design, and technical collaborations.',
 	alternates: {
 		canonical: 'https://sreevanth.is-a.dev/contact',
 	},
 	openGraph: {
-		title: 'Contact Vadlamudi Sreevanth Chowdhary | Sreevanth Chowdary',
+		title: 'Contact | Vadlamudi Sreevanth Chowdhary',
 		description:
-			'Connect with Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary) for software engineering opportunities and collaborations.',
+			'Connect with Vadlamudi Sreevanth Chowdhary for software engineering opportunities and collaborations.',
 		url: 'https://sreevanth.is-a.dev/contact',
 	},
 };

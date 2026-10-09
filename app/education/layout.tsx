@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Education | Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary)',
+	title: 'Education',
 	description:
-		'Academic background and education of Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary, Sreevanth Chowdhary, Sreevanth Vadlamudi) at Amrita Vishwa Vidyapeetham, Bengaluru.',
+		'Academic education and Computer Science & Engineering degree of Vadlamudi Sreevanth Chowdhary at Amrita Vishwa Vidyapeetham, Bengaluru.',
 	alternates: {
 		canonical: 'https://sreevanth.is-a.dev/education',
 	},
 	openGraph: {
-		title: 'Education | Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary)',
+		title: 'Education | Vadlamudi Sreevanth Chowdhary',
 		description:
-			'Academic background and education details of Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary).',
+			'Academic background and education details of Vadlamudi Sreevanth Chowdhary.',
 		url: 'https://sreevanth.is-a.dev/education',
 	},
 };

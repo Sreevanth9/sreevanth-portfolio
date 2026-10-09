@@ -1,7 +1,7 @@
 export const siteConfig = {
 	name: 'Vadlamudi Sreevanth Chowdhary',
 	description:
-		'Vadlamudi Sreevanth Chowdhary (also searched as Sreevanth Chowdary, Sreevanth Chowdhary, Sreevanth Vadlamudi, Vadlamudi Sreevanth, Sreevanth Choudhary, Sravanth Chowdary, Srivanth Chowdary, Sreevanth V, V Sreevanth) — Software Engineer & Full-Stack Developer specializing in backend architecture, Google Cloud (GCP), Core Java, TypeScript, and modern scalable software systems.',
+		'Vadlamudi Sreevanth Chowdhary is a Software Engineer and Full-Stack Developer specializing in backend systems architecture, Google Cloud Platform (GCP), Core Java, TypeScript, and scalable cloud applications.',
 	mainNav: [
 		{
 			title: 'Home',

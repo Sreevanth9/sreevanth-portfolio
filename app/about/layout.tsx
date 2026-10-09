@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'About Vadlamudi Sreevanth Chowdhary | Sreevanth Chowdary',
+	title: 'About',
 	description:
-		'Vadlamudi Sreevanth Chowdhary (also known as Sreevanth Chowdary, Sreevanth Chowdhary, Sreevanth Vadlamudi, Vadlamudi Sreevanth, Sreevanth Choudhary) — Software Engineer and Computer Science Undergraduate.',
+		'Learn more about Vadlamudi Sreevanth Chowdhary — Computer Science undergraduate at Amrita Vishwa Vidyapeetham, software engineer, backend systems architect, and full-stack developer.',
 	alternates: {
 		canonical: 'https://sreevanth.is-a.dev/about',
 	},
 	openGraph: {
-		title: 'About Vadlamudi Sreevanth Chowdhary | Sreevanth Chowdary',
+		title: 'About | Vadlamudi Sreevanth Chowdhary',
 		description:
-			'Background, technical skills, and experience of Vadlamudi Sreevanth Chowdhary (Sreevanth Chowdary).',
+			'Background, technical skills, and engineering journey of Vadlamudi Sreevanth Chowdhary.',
 		url: 'https://sreevanth.is-a.dev/about',
 	},
 };
