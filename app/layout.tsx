@@ -103,9 +103,14 @@ export const metadata: Metadata = {
 		images: ['/sreevanth.jpeg'],
 	},
 	icons: {
-		icon: '/icon.png',
-		shortcut: '/icon.png',
-		apple: '/icon.png',
+		icon: [
+			{ url: '/favicon.ico' },
+			{ url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
+			{ url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+			{ url: '/favicon-192x192.png', sizes: '192x192', type: 'image/png' },
+		],
+		shortcut: '/favicon.ico',
+		apple: '/favicon-192x192.png',
 	},
 };
 
